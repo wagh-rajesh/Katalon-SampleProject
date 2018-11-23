@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//button[@value='30']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Vyvanse State Medicaid Single Plan Flashcard' or . = 'Vyvanse State Medicaid Single Plan Flashcard')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

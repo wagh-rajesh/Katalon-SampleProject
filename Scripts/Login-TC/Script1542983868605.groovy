@@ -15,17 +15,14 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('shire-publisher.devweb01.fingertipformulary.com')
+WebUI.navigateToUrl(GlobalVariable.applicationUrl)
 
-//WebUI.setText(findTestObject('Object Repository/PO-Login/input_The username password or'), 'testdrg2@shire.com')
-WebUI.setText(findTestObject('Object Repository/PO-Login/input_The username password or'), 'testdrg2@shire.com')
+WebUI.setText(findTestObject('Object Repository/PO-Login/input_The username password or'), GlobalVariable.Username)
 
-//WebUI.setEncryptedText(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), 'IcG9dyLVxtQ3e4OpB5V01Q==')
-WebUI.setEncryptedText(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), 'IcG9dyLVxtQ3e4OpB5V01Q==')
+WebUI.setText(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), GlobalVariable.Password)
 
-WebUI.delay(2)
+WebUI.delay(GlobalVariable.timeoutTwoSec)
 
 WebUI.click(findTestObject('Object Repository/PO-Login/input_Forgot your password_sub'))
 
-WebUI.delay(20)
-
+WebUI.delay(GlobalVariable.timeoutTwentySec)
