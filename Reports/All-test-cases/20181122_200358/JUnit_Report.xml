@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="All-test-cases" time="149" tests="3" failures="0" errors="0">
+   <testsuite name="All-test-cases" tests="3" failures="0" errors="0" time="149" timestamp="2018-11-22 20:03:59" hostname="rwagh - 192.168.235.146" id="Test Suites/All-test-cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/rwagh/Katalon Studio/Publisher2.0-Automation/Reports/All-test-cases/20181122_200358"/>
+         <property name="logFiles" value="/Users/rwagh/Katalon Studio/Publisher2.0-Automation/Reports/All-test-cases/20181122_200358/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="rwagh - 192.168.235.146"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.8.6.1"/>
+         <property name="browser" value="Firefox 63.0"/>
+         <property name="hostAddress" value="192.168.235.146"/>
+         <property name="sessionId" value="6e8c6877-78fb-0d43-8f45-6dcb01e502ac"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Login-Logout" classname="Test Cases/Login-Logout" status="PASSED">
+         <system-out><![CDATA[2018-11-22 20:04:00 - [TEST_CASE][PASSED] - Test Cases/Login-Logout: Test Cases/Login-Logout
+
+2018-11-22 20:04:00 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-22 20:04:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-22 20:04:03 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:04:12 - [MESSAGE][PASSED] - Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:04:12 - [TEST_STEP][PASSED] - setText: Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:04:12 - [MESSAGE][PASSED] - Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:04:12 - [TEST_STEP][PASSED] - setEncryptedText: Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:04:12 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:04:12 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 20:04:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 20:04:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:04:30 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:04:30 - [TEST_STEP][PASSED] - delay: Delayed 20 second(s)
+
+2018-11-22 20:04:50 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2018-11-22 20:04:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:04:50 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:04:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:04:52 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:04:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:04:52 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:04:52 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-22 20:04:53 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login-Logout" classname="Test Cases/Login-Logout" status="PASSED">
+         <system-out><![CDATA[2018-11-22 20:04:53 - [TEST_CASE][PASSED] - Test Cases/Login-Logout: Test Cases/Login-Logout
+
+2018-11-22 20:04:53 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-22 20:04:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-22 20:04:55 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:05:01 - [MESSAGE][PASSED] - Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:05:01 - [TEST_STEP][PASSED] - setText: Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:05:01 - [MESSAGE][PASSED] - Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:05:01 - [TEST_STEP][PASSED] - setEncryptedText: Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:05:01 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:05:01 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 20:05:03 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 20:05:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:05:15 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:05:15 - [TEST_STEP][PASSED] - delay: Delayed 20 second(s)
+
+2018-11-22 20:05:35 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2018-11-22 20:05:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:05:35 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:05:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:05:38 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:05:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:05:38 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:05:38 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-22 20:05:39 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login-Logout" classname="Test Cases/Login-Logout" status="PASSED">
+         <system-out><![CDATA[2018-11-22 20:05:39 - [TEST_CASE][PASSED] - Test Cases/Login-Logout: Test Cases/Login-Logout
+
+2018-11-22 20:05:39 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-11-22 20:05:41 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-11-22 20:05:41 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:05:49 - [MESSAGE][PASSED] - Navigate to 'http://shire-publisher.devweb01.fingertipformulary.com' successfully
+
+2018-11-22 20:05:49 - [TEST_STEP][PASSED] - setText: Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:05:49 - [MESSAGE][PASSED] - Text 'testdrg2@shire.com' is set on object 'Object Repository/PO-Login/input_The username password or'
+
+2018-11-22 20:05:49 - [TEST_STEP][PASSED] - setEncryptedText: Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:05:49 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/PO-Login/input_Please enter your work e'
+
+2018-11-22 20:05:49 - [TEST_STEP][PASSED] - delay: Delayed 2 second(s)
+
+2018-11-22 20:05:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2018-11-22 20:05:51 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:06:05 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/input_Forgot your password_sub' is clicked on
+
+2018-11-22 20:06:05 - [TEST_STEP][PASSED] - delay: Delayed 20 second(s)
+
+2018-11-22 20:06:25 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2018-11-22 20:06:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:06:26 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Shire FF Admin' is clicked on
+
+2018-11-22 20:06:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:06:28 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_Logout' is clicked on
+
+2018-11-22 20:06:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:06:28 - [MESSAGE][PASSED] - Object: 'Object Repository/PO-Login/a_hide this' is clicked on
+
+2018-11-22 20:06:28 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-11-22 20:06:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-11-22 20:03:59 - [TEST_SUITE][PASSED] - All-test-cases: Test Cases/Login-Logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

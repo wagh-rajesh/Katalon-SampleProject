@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+All-test-cases,Firefox 63.0,,2018-11-22 19:07:39,2018-11-22 19:09:28,1m - 48.882s,FAILED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:07:39,2018-11-22 19:08:48,1m - 9.273s,FAILED
+openBrowser,Firefox 63.0,,2018-11-22 19:07:39,2018-11-22 19:07:42,3.130s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:07:42,2018-11-22 19:07:52,10.007s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:07:52,2018-11-22 19:07:53,0.129s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:07:53,2018-11-22 19:07:53,0.169s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:07:53,2018-11-22 19:07:55,2.016s,PASSED
+click,Firefox 63.0,,2018-11-22 19:07:55,2018-11-22 19:07:57,2.280s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:07:57,2018-11-22 19:08:17,20.003s,PASSED
+click,Firefox 63.0,,2018-11-22 19:08:17,2018-11-22 19:08:48,31.300s,FAILED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:08:48,2018-11-22 19:09:27,38.741s,FAILED
+openBrowser,Firefox 63.0,,2018-11-22 19:08:48,2018-11-22 19:08:51,2.479s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:08:51,2018-11-22 19:08:59,8.156s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:08:59,2018-11-22 19:08:59,0.101s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:08:59,2018-11-22 19:08:59,0.074s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:08:59,2018-11-22 19:09:01,2.006s,PASSED
+click,Firefox 63.0,,2018-11-22 19:09:01,2018-11-22 19:09:03,2.217s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:09:03,2018-11-22 19:09:23,20.005s,PASSED
+click,Firefox 63.0,,2018-11-22 19:09:23,2018-11-22 19:09:27,3.689s,FAILED

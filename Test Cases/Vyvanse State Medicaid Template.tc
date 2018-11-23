@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Vyvanse State Medicaid Single Plan Template</description>
+   <name>Vyvanse State Medicaid Template</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94e436b0-aa33-49ce-8eb0-1bd6a4786add</testCaseGuid>
+   <variable>
+      <defaultValue>'Order PDF'</defaultValue>
+      <description></description>
+      <id>9caaba26-0768-4fc4-a82b-91cd16bb3cae</id>
+      <masked>false</masked>
+      <name>OrderPDF</name>
+   </variable>
+   <variable>
+      <defaultValue>'testdrg2@shire.com'</defaultValue>
+      <description></description>
+      <id>a3955303-97df-4293-a946-0fb31e69c815</id>
+      <masked>false</masked>
+      <name>G_Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'hurlDEFT53'</defaultValue>
+      <description></description>
+      <id>1cdce0ce-b926-4f8f-9a1b-30bf029b8b04</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>0cf35eea-6a7c-469a-879e-c30add5bd806</id>
+      <masked>false</masked>
+      <name>G_ShortTimeout</name>
+   </variable>
+   <variable>
+      <defaultValue>5</defaultValue>
+      <description></description>
+      <id>7f6047e4-1987-4a76-9823-6c064cf43f53</id>
+      <masked>false</masked>
+      <name>G_LongTimeout</name>
+   </variable>
+</TestCaseEntity>

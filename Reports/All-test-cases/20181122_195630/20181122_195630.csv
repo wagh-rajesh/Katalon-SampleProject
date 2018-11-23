@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+All-test-cases,Firefox 63.0,,2018-11-22 19:56:32,2018-11-22 19:58:16,1m - 44.348s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:56:32,2018-11-22 19:57:27,54.770s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 19:56:33,2018-11-22 19:56:36,3.175s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:56:36,2018-11-22 19:56:46,10.408s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:56:46,2018-11-22 19:56:46,0.124s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:56:46,2018-11-22 19:56:46,0.170s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:56:46,2018-11-22 19:56:48,2.019s,PASSED
+click,Firefox 63.0,,2018-11-22 19:56:48,2018-11-22 19:57:04,15.395s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:57:04,2018-11-22 19:57:24,20.005s,PASSED
+click,Firefox 63.0,,2018-11-22 19:57:24,2018-11-22 19:57:24,0.255s,PASSED
+click,Firefox 63.0,,2018-11-22 19:57:24,2018-11-22 19:57:26,2.240s,PASSED
+click,Firefox 63.0,,2018-11-22 19:57:26,2018-11-22 19:57:27,0.234s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 19:57:27,2018-11-22 19:57:27,0.482s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:57:27,2018-11-22 19:58:16,49.269s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 19:57:27,2018-11-22 19:57:29,2.075s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:57:29,2018-11-22 19:57:37,8.034s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:57:37,2018-11-22 19:57:37,0.097s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:57:37,2018-11-22 19:57:37,0.068s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:57:37,2018-11-22 19:57:39,2.006s,PASSED
+click,Firefox 63.0,,2018-11-22 19:57:39,2018-11-22 19:57:53,13.628s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:57:53,2018-11-22 19:58:13,20.002s,PASSED
+click,Firefox 63.0,,2018-11-22 19:58:13,2018-11-22 19:58:13,0.251s,PASSED
+click,Firefox 63.0,,2018-11-22 19:58:13,2018-11-22 19:58:16,2.391s,PASSED
+click,Firefox 63.0,,2018-11-22 19:58:16,2018-11-22 19:58:16,0.236s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 19:58:16,2018-11-22 19:58:16,0.469s,PASSED

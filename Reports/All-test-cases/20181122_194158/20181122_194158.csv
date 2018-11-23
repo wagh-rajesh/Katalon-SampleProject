@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+All-test-cases,Firefox 63.0,,2018-11-22 19:42:00,2018-11-22 19:43:45,1m - 45.594s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:42:00,2018-11-22 19:42:54,53.697s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 63.0,,2018-11-22 19:42:00,2018-11-22 19:42:00,0.009s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 19:42:00,2018-11-22 19:42:03,3.125s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:42:03,2018-11-22 19:42:12,8.631s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:42:12,2018-11-22 19:42:12,0.137s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:42:12,2018-11-22 19:42:12,0.176s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:42:12,2018-11-22 19:42:14,2.018s,PASSED
+click,Firefox 63.0,,2018-11-22 19:42:14,2018-11-22 19:42:30,15.781s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:42:30,2018-11-22 19:42:50,20.007s,PASSED
+click,Firefox 63.0,,2018-11-22 19:42:50,2018-11-22 19:42:50,0.252s,PASSED
+click,Firefox 63.0,,2018-11-22 19:42:50,2018-11-22 19:42:53,2.528s,PASSED
+click,Firefox 63.0,,2018-11-22 19:42:53,2018-11-22 19:42:53,0.242s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 19:42:53,2018-11-22 19:42:54,0.663s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 63.0,,2018-11-22 19:42:54,2018-11-22 19:42:54,0.004s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 19:42:54,2018-11-22 19:43:45,51.524s,PASSED
+Start listener action : sampleBeforeTestCase,Firefox 63.0,,2018-11-22 19:42:54,2018-11-22 19:42:54,0.002s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 19:42:54,2018-11-22 19:42:56,2.095s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 19:42:56,2018-11-22 19:43:02,6.384s,PASSED
+setText,Firefox 63.0,,2018-11-22 19:43:02,2018-11-22 19:43:02,0.082s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 19:43:02,2018-11-22 19:43:02,0.070s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:43:02,2018-11-22 19:43:04,2.007s,PASSED
+click,Firefox 63.0,,2018-11-22 19:43:04,2018-11-22 19:43:22,17.725s,PASSED
+delay,Firefox 63.0,,2018-11-22 19:43:22,2018-11-22 19:43:42,20.006s,PASSED
+click,Firefox 63.0,,2018-11-22 19:43:42,2018-11-22 19:43:42,0.248s,PASSED
+click,Firefox 63.0,,2018-11-22 19:43:42,2018-11-22 19:43:45,2.172s,PASSED
+click,Firefox 63.0,,2018-11-22 19:43:45,2018-11-22 19:43:45,0.239s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 19:43:45,2018-11-22 19:43:45,0.479s,PASSED
+Start listener action : sampleAfterTestCase,Firefox 63.0,,2018-11-22 19:43:45,2018-11-22 19:43:45,0.003s,PASSED

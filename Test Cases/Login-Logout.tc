@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test login and logout functionality of Publisher 2.0 site for Shire.</description>
+   <name>Login-Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4f404a95-a6d8-47ff-b56c-9df740888edc</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>36800ab8-d646-4191-8a61-4000b2d2d33a</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>491ebcbb-968c-4738-a480-1d7e303ce1c9</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

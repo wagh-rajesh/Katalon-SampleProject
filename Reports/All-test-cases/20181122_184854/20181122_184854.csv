@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+All-test-cases,Firefox 63.0,,2018-11-22 18:48:56,2018-11-22 18:50:20,1m - 24.293s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 18:48:56,2018-11-22 18:49:47,51.140s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 18:48:56,2018-11-22 18:49:00,3.340s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 18:49:00,2018-11-22 18:49:07,7.515s,PASSED
+setText,Firefox 63.0,,2018-11-22 18:49:07,2018-11-22 18:49:07,0.144s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 18:49:07,2018-11-22 18:49:08,0.175s,PASSED
+click,Firefox 63.0,,2018-11-22 18:49:08,2018-11-22 18:49:24,16.249s,PASSED
+delay,Firefox 63.0,,2018-11-22 18:49:24,2018-11-22 18:49:44,20.019s,PASSED
+click,Firefox 63.0,,2018-11-22 18:49:44,2018-11-22 18:49:44,0.258s,PASSED
+click,Firefox 63.0,,2018-11-22 18:49:44,2018-11-22 18:49:46,2.309s,PASSED
+click,Firefox 63.0,,2018-11-22 18:49:46,2018-11-22 18:49:47,0.243s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 18:49:47,2018-11-22 18:49:47,0.635s,PASSED
+,,,,,,
+Test Cases/Login-Logout,Firefox 63.0,Test login and logout functionality of Publisher 2.0 site for Shire.,2018-11-22 18:49:47,2018-11-22 18:50:20,32.842s,PASSED
+openBrowser,Firefox 63.0,,2018-11-22 18:49:47,2018-11-22 18:49:50,2.162s,PASSED
+navigateToUrl,Firefox 63.0,,2018-11-22 18:49:50,2018-11-22 18:49:57,7.234s,PASSED
+setText,Firefox 63.0,,2018-11-22 18:49:57,2018-11-22 18:49:57,0.098s,PASSED
+setEncryptedText,Firefox 63.0,,2018-11-22 18:49:57,2018-11-22 18:49:57,0.079s,PASSED
+click,Firefox 63.0,,2018-11-22 18:49:57,2018-11-22 18:49:57,0.268s,PASSED
+delay,Firefox 63.0,,2018-11-22 18:49:57,2018-11-22 18:50:17,20.004s,PASSED
+click,Firefox 63.0,,2018-11-22 18:50:17,2018-11-22 18:50:17,0.261s,PASSED
+click,Firefox 63.0,,2018-11-22 18:50:17,2018-11-22 18:50:19,1.847s,PASSED
+click,Firefox 63.0,,2018-11-22 18:50:19,2018-11-22 18:50:20,0.256s,PASSED
+closeBrowser,Firefox 63.0,,2018-11-22 18:50:20,2018-11-22 18:50:20,0.622s,PASSED
