@@ -19,11 +19,4 @@
       <type>Main</type>
       <value>template-list</value>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>//li[contains(text(),'Vyvanse State Medicaid Single Plan Flashcard')]</value>
-   </webElementProperties>
 </WebElementEntity>

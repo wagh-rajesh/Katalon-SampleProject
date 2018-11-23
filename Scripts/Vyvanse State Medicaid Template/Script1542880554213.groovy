@@ -13,23 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
-WebUI.delay(2)
-
-WebUI.maximizeWindow()
-
-WebUI.delay(2)
-
-WebUI.navigateToUrl('shire-publisher.devweb01.fingertipformulary.com')
-
-WebUI.setText(findTestObject('VyvanseStateMedicaid-OR/input_The username password or'), GlobalVariable.G_Username)
-
-WebUI.setText(findTestObject('Object Repository/VyvanseStateMedicaid-OR/input_Please enter your work e'), GlobalVariable.Password)
-
-WebUI.click(findTestObject('Object Repository/VyvanseStateMedicaid-OR/input_Forgot your password_sub'))
-
-WebUI.delay(30)
+WebUI.callTestCase(findTestCase('Login-TC'), [('username') : 'testdrg2@shire.com', ('password') : 'hurlDEFT53'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/VyvanseStateMedicaid-OR/button_Vyvanse State Medicaid'))
 
@@ -65,7 +49,7 @@ WebUI.click(findTestObject('Object Repository/VyvanseStateMedicaid-OR/input_For 
 
 WebUI.delay(5)
 
-WebUI.closeBrowser()
+WebUI.verifyElementText(findTestObject('Common-OR/CriteriaSelections/TemplateName'), 'Vyvanse State Medicaid Single Plan Flashcard')
 
-WebUI.delay(5)
+WebUI.callTestCase(findTestCase('Logout-TC'), [('username') : '', ('password') : ''], FailureHandling.STOP_ON_FAILURE)
 

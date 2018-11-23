@@ -13,25 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.delay(2)
 
-WebUI.navigateToUrl('shire-publisher.devweb01.fingertipformulary.com')
-
-WebUI.setText(findTestObject('Object Repository/PO-Login/input_The username password or'), username)
-
-WebUI.setText(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), password)
+WebUI.click(findTestObject('Common-OR/MainMenu/UserClick'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/PO-Login/input_Forgot your password_sub'))
+WebUI.click(findTestObject('Common-OR/MainMenu/Logout'))
 
-WebUI.delay(20)
-
-WebUI.click(findTestObject('Object Repository/PO-Login/a_Shire FF Admin'))
-
-WebUI.click(findTestObject('Object Repository/PO-Login/a_Logout'))
-
-WebUI.click(findTestObject('Object Repository/PO-Login/a_hide this'))
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

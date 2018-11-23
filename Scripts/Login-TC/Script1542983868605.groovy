@@ -29,11 +29,3 @@ WebUI.click(findTestObject('Object Repository/PO-Login/input_Forgot your passwor
 
 WebUI.delay(20)
 
-WebUI.click(findTestObject('Object Repository/PO-Login/a_Shire FF Admin'))
-
-WebUI.click(findTestObject('Object Repository/PO-Login/a_Logout'))
-
-WebUI.click(findTestObject('Object Repository/PO-Login/a_hide this'))
-
-WebUI.closeBrowser()
-
