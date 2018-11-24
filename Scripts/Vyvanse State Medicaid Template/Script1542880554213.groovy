@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Object Repository/VyvanseStateMedicaid-OR/input_For 
 
 WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Common-OR/CriteriaSelections/TemplateName'), 'Vyvanse State Medicaid Single Plan Flashcard')
+WebUI.verifyElementText(findTestObject('Common-OR/CustomTemplate/CriteriaSelections/TemplateName'), 'Vyvanse State Medicaid Single Plan Flashcard')
 
 WebUI.callTestCase(findTestCase('Logout-TC'), [('username') : '', ('password') : ''], FailureHandling.STOP_ON_FAILURE)
 
