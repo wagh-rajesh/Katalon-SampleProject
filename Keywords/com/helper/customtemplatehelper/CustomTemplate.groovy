@@ -13,6 +13,7 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -26,4 +27,12 @@ public class CustomTemplate {
 		WebUI.verifyElementClickable(findTestObject('Object Repository/PO-Login/h2_Custom Template'))
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
 	}
+	
+	@Keyword
+	public void selectTemplate(String templateName) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectTemplate', [('Variable'):templateName]), GlobalVariable.timeoutTwentySec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectTemplate', [('Variable'):templateName]))
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CriteriaSelections/TemplateName', [('Variable'):templateName]), GlobalVariable.timeoutTwentySec)
+	}
+	
 }

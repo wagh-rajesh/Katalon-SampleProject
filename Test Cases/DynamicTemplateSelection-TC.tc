@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Select the template dynamically by passing the template name to a custom keyword</description>
+   <name>DynamicTemplateSelection-TC</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe07e40f-5eeb-4290-8e39-8e0535452835</testCaseGuid>
+</TestCaseEntity>

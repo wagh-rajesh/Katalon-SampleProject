@@ -20,26 +20,26 @@ import com.sun.media.sound.SoftReverb.Delay
 import internal.GlobalVariable
 
 public class CustomBrowser {
-	
+
 	@Keyword
 	public void openBrowser(String applicationUrl) {
 		WebUI.openBrowser(applicationUrl)
 		WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
 		WebUI.maximizeWindow()
 	}
-	
+
 	@Keyword
 	public void openBrowser() {
 		openBrowser(GlobalVariable.applicationUrl)
 	}
-	
+
 	@Keyword
 	public void closeBrowser() {
 		WebUI.switchToDefaultContent()
 		WebUI.switchToWindowIndex(0)
 		WebUI.closeBrowser()
 	}
-	
+
 	@Keyword
 	public void refreshBrowser() {
 		KeywordUtil.logInfo("Refreshing")
@@ -47,6 +47,5 @@ public class CustomBrowser {
 		WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
 		KeywordUtil.markPassed("Refresh successfully")
 	}
-	
 }
 
