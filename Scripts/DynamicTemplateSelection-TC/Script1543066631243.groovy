@@ -19,9 +19,8 @@ CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.scrollToTemplate'
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'('Mydayis Commercial Payer')
 
-WebUI.delay(5)
+WebUI.delay(GlobalVariable.timeoutFiveSec)
 
-//CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('metro_stat_areas', 'Alaska', GlobalVariable.timeoutTwentySec)
 CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('states', 'Alaska', GlobalVariable.timeoutTenSec)
 
 CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'('Aetna')
