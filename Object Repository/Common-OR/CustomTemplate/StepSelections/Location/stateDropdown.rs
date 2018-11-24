@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LocationCategory</name>
+   <name>stateDropdown</name>
    <tag></tag>
-   <elementGuidId>bd153e33-ce09-4e54-a042-c066871754dc</elementGuidId>
+   <elementGuidId>b4e4c34f-760d-4f76-821b-d0c5235e863e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'dropdown locations']</value>
+         <value>//div[@class='dropdown states']//button[@type='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>dropdown locations</value>
+      <value>//div[@class='dropdown states']//button[@type='button']</value>
    </webElementProperties>
 </WebElementEntity>

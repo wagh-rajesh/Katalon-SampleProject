@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'Columbus')]</value>
+         <value>//a[contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Columbus')]</value>
+      <value>//a[contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>

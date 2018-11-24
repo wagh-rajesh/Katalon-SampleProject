@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>SelectLocation</name>
+   <description>Object for clicking on &quot;Choose a Location&quot; Accordian</description>
+   <name>locationStep</name>
    <tag></tag>
-   <elementGuidId>938a8e7d-6c28-4f41-be56-0dc7ca472488</elementGuidId>
+   <elementGuidId>0f992308-d997-49e5-897b-01ea8df8d77f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'State')]</value>
+         <value>//div[@id='location-panel']//p[@class='pull-left']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'State')]</value>
+      <value>//div[@id='location-panel']//p[@class='pull-left']</value>
    </webElementProperties>
 </WebElementEntity>

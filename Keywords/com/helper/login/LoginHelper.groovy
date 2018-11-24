@@ -43,29 +43,29 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
 class LoginHelper {
-	
+
 	@Keyword
 	public void loginToApplication() {
 		loginToApplication(GlobalVariable.applicationUrl, GlobalVariable.Username, GlobalVariable.Password)
 	}
-	
+
 	@Keyword
 	public void loginToApplication(String applicationUrl, String Username, String Password) {
 		WebUI.openBrowser(applicationUrl)
 		WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
 		WebUI.maximizeWindow()
-		
+
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/input_The username password or'), GlobalVariable.timeoutTwentySec)
-		
+
 		WebUI.sendKeys(findTestObject('Object Repository/PO-Login/input_The username password or'), Username)
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
 		WebUI.sendKeys(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), Password)
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
-		
+
 		WebUI.click(findTestObject('Object Repository/PO-Login/input_Forgot your password_sub'))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/h2_Custom Template'), GlobalVariable.timeoutTwentySec)
 	}
-	
+
 	@Keyword
 	public void logoutApplication() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/a_Shire FF Admin'), GlobalVariable.timeoutTwentySec)

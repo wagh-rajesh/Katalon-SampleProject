@@ -21,7 +21,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class CustomTemplate {
-	
+
 	@Keyword
 	public void selectBrand(String brandName) {
 		WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
@@ -30,7 +30,7 @@ public class CustomTemplate {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectBrand', [('Variable'): brandName]))
 		WebUI.delay(GlobalVariable.timeoutFiveSec)
 	}
-	
+
 	@Keyword
 	public void scrollToTemplate(String templateName) {
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
@@ -52,5 +52,4 @@ public class CustomTemplate {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectTemplate', [('Variable'):templateName]))
 		WebUI.waitForElementVisible(findTestObject('Common-OR/CustomTemplate/CriteriaSelections/TemplateName', [('Variable'):templateName]), GlobalVariable.timeoutTwentySec)
 	}
-	
 }

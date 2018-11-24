@@ -21,6 +21,12 @@ CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'('
 
 WebUI.delay(GlobalVariable.timeoutTenSec)
 
+//CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('metro_stat_areas', 'Alaska', GlobalVariable.timeoutTwentySec)
+
+CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('metro_stat_areas', 'Alaska', 'Fairbanks', GlobalVariable.timeoutTwentySec)
+
+WebUI.delay(GlobalVariable.timeoutFiveSec)
+
 CustomKeywords.'com.helper.login.LoginHelper.logoutApplication'()
 
 CustomKeywords.'com.helper.browserhelper.CustomBrowser.closeBrowser'()

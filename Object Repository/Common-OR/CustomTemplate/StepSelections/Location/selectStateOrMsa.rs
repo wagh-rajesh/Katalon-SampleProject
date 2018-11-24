@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectStateOrMsa</name>
+   <tag></tag>
+   <elementGuidId>84f5dd5a-90b4-4526-870e-9333479fe92b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.container-fluid:nth-child(2) div.row:nth-child(3) div.col-md-9 div.panel-group div.panel.panel-default.step-panel:nth-child(2) div.panel-heading.clearfix.collapsed div.pull-right div.dropdown.locations > button.btn.btn-default.dropdown-toggle</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//li[@class='geo-${Variable}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//li[@class='geo-${Variable}']</value>
+   </webElementProperties>
+</WebElementEntity>
