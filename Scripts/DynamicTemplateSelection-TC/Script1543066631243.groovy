@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.helper.login.LoginHelper.loginToApplication'()
 
+CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.scrollToTemplate'('Mydayis Commercial Payer')
+
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'('Mydayis Commercial Payer')
 
 WebUI.delay(GlobalVariable.timeoutTenSec)

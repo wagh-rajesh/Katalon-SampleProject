@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>SelectVyvanse</name>
+   <description>Selection of drug</description>
+   <name>AllBrand</name>
    <tag></tag>
-   <elementGuidId>c8d0aa39-5f0b-424d-93eb-53864b4e6055</elementGuidId>
+   <elementGuidId>5b6fe5e8-f773-4b81-bbca-382bb9fdccf9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'Vyvanse')]</value>
+         <value>//div[@class='dropdown brands']//button[@type='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Vyvanse')]</value>
+      <value>//div[@class='dropdown brands']//button[@type='button']</value>
    </webElementProperties>
 </WebElementEntity>
