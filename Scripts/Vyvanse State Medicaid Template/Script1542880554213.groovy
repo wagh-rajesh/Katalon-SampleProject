@@ -15,8 +15,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login-TC'), [('username') : 'testdrg2@shire.com', ('password') : 'hurlDEFT53'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(GlobalVariable.timeoutTwoSec)
-
 WebUI.click(findTestObject('Common-OR/CustomTemplate/SelectBrand'))
 
 WebUI.delay(GlobalVariable.timeoutTwoSec)

@@ -13,17 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+CustomKeywords.'com.helper.login.LoginHelper.loginToApplication'()
 
-WebUI.navigateToUrl(GlobalVariable.applicationUrl)
+CustomKeywords.'com.helper.login.LoginHelper.logoutApplication'()
 
-WebUI.setText(findTestObject('Object Repository/PO-Login/input_The username password or'), GlobalVariable.Username)
-
-WebUI.setText(findTestObject('Object Repository/PO-Login/input_Please enter your work e'), GlobalVariable.Password)
-
-WebUI.delay(GlobalVariable.timeoutTwoSec)
-
-WebUI.click(findTestObject('Object Repository/PO-Login/input_Forgot your password_sub'))
-
-WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
+CustomKeywords.'com.helper.browserhelper.CustomBrowser.closeBrowser'()
 
