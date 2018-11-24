@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>planStep</name>
+   <tag></tag>
+   <elementGuidId>0a504fb6-12dd-4716-92e4-546328f4fcc8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='shire_plan-panel']//p[@class='pull-left']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='shire_plan-panel']//p[@class='pull-left']</value>
+   </webElementProperties>
+</WebElementEntity>

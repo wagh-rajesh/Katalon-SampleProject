@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectCallouts</name>
+   <tag></tag>
+   <elementGuidId>3756989d-1252-41dd-86ae-2f72eee8e0db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='callout-div']//div[${Variable}]//div[1]//input[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='callout-div']//div[${Variable}]//div[1]//input[1]</value>
+   </webElementProperties>
+</WebElementEntity>

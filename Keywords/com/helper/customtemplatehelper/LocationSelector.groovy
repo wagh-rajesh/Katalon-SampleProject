@@ -28,9 +28,10 @@ public class LocationSelector {
 	
 	@Keyword
 	public void selectLocation(String locationType, String stateName, Integer waitTimeout) {
-		expandLocationStep()
+		expandOrCollapseLocationStep()
 		selectLocationType(locationType)
 		selectState(stateName, waitTimeout)
+		expandOrCollapseLocationStep()
 	}
 	
 	@Keyword
@@ -40,7 +41,7 @@ public class LocationSelector {
 		WebUI.delay(1)
 	}
 	
-	public void expandLocationStep() {
+	public void expandOrCollapseLocationStep() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/locationStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/locationStep'))
 		WebUI.delay(1)
