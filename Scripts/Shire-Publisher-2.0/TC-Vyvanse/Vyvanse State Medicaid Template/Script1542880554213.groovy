@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Login-TC'), [('username') : 'testdrg2@shire.com', ('password') : 'hurlDEFT53'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sample-Test-Cases/Login-TC'), [('username') : 'testdrg2@shire.com', ('password') : 'hurlDEFT53'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Common-OR/CustomTemplate/AllBrand'))
 
@@ -59,5 +59,5 @@ WebUI.delay(5)
 
 WebUI.verifyElementText(findTestObject('Common-OR/CustomTemplate/CriteriaSelections/TemplateName'), 'Vyvanse State Medicaid Single Plan Flashcard')
 
-WebUI.callTestCase(findTestCase('Logout-TC'), [('username') : '', ('password') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Sample-Test-Cases/Logout-TC'), [('username') : '', ('password') : ''], FailureHandling.STOP_ON_FAILURE)
 

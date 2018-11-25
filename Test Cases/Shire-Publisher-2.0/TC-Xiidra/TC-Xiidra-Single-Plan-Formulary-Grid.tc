@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test case for Xiidra-Multiplan-Formulary-Grid</description>
+   <name>TC-Xiidra-Single-Plan-Formulary-Grid</name>
+   <tag>Xiidra</tag>
+   <comment></comment>
+   <testCaseGuid>dfe6f4c7-fe96-4e6a-8592-15de58dc525f</testCaseGuid>
+</TestCaseEntity>

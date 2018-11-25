@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class PayerSelector {
-	
+
 	@Keyword
 	public void selectPayer(String payerName) {
 		expandOrCollapsePayerSelectionStep()
@@ -28,7 +28,7 @@ public class PayerSelector {
 		WebUI.delay(GlobalVariable.timeoutTenSec)
 		expandOrCollapsePayerSelectionStep()
 	}
-	
+
 	public void expandOrCollapsePayerSelectionStep() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'))

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>planOrPayerStep</name>
+   <tag></tag>
+   <elementGuidId>c1df3472-9765-470b-9fc8-158f2858f687</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='plan_or_payer-panel']//p[@class='pull-left']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='plan_or_payer-panel']//p[@class='pull-left']</value>
+   </webElementProperties>
+</WebElementEntity>

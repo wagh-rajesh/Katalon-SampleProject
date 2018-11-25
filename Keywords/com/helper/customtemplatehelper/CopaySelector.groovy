@@ -18,20 +18,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable
 
-public class PlanOrPayerSelector {
+public class CopaySelector {
 	
 	@Keyword
-	public void selectPlanOrPayer(String planOrPayerName) {
-		expandOrCollapsePlanPayerSelectionStep()
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'), GlobalVariable.timeoutTwentySec)
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/selectPlanOrPayer', [('Variable'): planOrPayerName]))
+	public void selectCopayOption() {
+		expandOrCollapsePlanSelectionStep()
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChooseCopayOption/selectCopay'), GlobalVariable.timeoutTwentySec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChooseCopayOption/selectCopay'))
 		WebUI.delay(GlobalVariable.timeoutTenSec)
-		expandOrCollapsePlanPayerSelectionStep()
+		expandOrCollapsePlanSelectionStep()
 	}
-	
-	public void expandOrCollapsePlanPayerSelectionStep() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'), GlobalVariable.timeoutTwentySec)
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'))
+
+	public void expandOrCollapsePlanSelectionStep() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChooseCopayOption/copayStep'), GlobalVariable.timeoutTwentySec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChooseCopayOption/copayStep'))
 		WebUI.delay(1)
 	}
 }
