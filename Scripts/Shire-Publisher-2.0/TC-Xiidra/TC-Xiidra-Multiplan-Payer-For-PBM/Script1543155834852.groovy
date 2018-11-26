@@ -23,13 +23,15 @@ WebUI.delay(GlobalVariable.timeoutFiveSec)
 
 CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('states', 'Alaska', GlobalVariable.timeoutTenSec)
 
-CustomKeywords.'com.helper.customtemplatehelper.CopaySelector.selectCopayOption'()
-
-CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'('Premera Blue Cross')
-
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('Premera Blue Cross 3-Tier')
-
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('Premera Blue Cross 4-Tier')
+//
+//CustomKeywords.'com.helper.customtemplatehelper.CopaySelector.selectCopayOption'()
+//
+//CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'('Premera Blue Cross')
+//
+//CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('Premera Blue Cross 3-Tier')
+//
+//CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('Premera Blue Cross 4-Tier')
+CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName)
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 

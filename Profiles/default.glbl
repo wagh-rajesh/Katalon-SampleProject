@@ -39,4 +39,9 @@
       <initValue>20</initValue>
       <name>timeoutTwentySec</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>1</initValue>
+      <name>timeoutOneSec</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
