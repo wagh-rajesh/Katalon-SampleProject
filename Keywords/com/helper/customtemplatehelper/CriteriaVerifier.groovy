@@ -21,46 +21,87 @@ import internal.GlobalVariable
 
 public class CriteriaVerifier {
 
-	
+
 	@Keyword
-	public void verifyCriteria(String templateName, String locationName, String sellSheetName) {
+	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPlansNames) {
 		verifyTemplateName(templateName)
 		WebUI.delay(GlobalVariable.timeoutOneSec)
 		verifyLocation(locationName)
 		WebUI.delay(GlobalVariable.timeoutOneSec)
 		verifySellSheetName(sellSheetName)
 		WebUI.delay(GlobalVariable.timeoutOneSec)
+		verifyPlans(selectedPlansNames)
+		WebUI.delay(GlobalVariable.timeoutOneSec)
+		verifyViewPDFBtn()
+		WebUI.delay(GlobalVariable.timeoutOneSec)
 	}
 	
+	@Keyword
+	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPayerNames, List selectedPlansNames) {
+		verifyCriteria(templateName, locationName, sellSheetName, selectedPlansNames)
+		verifyPayers(selectedPayerNames)
+		WebUI.delay(GlobalVariable.timeoutOneSec)
+	}
+
 	public void verifyTemplateName(String templateName) {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/TemplateName'), GlobalVariable.timeoutTwentySec)
 		WebUI.verifyElementText(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/TemplateName'), templateName, FailureHandling.STOP_ON_FAILURE)
-		KeywordUtil.logInfo("------------------> Template name is verified on criteria section")
 	}
 
 	public void verifyLocation(String locationName) {
 		WebUI.verifyElementText(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/Location'), locationName, FailureHandling.STOP_ON_FAILURE)
-		KeywordUtil.logInfo("------------------> Location name is verified on criteria section")
 	}
 
-	public void verifyPayers() {
+	public void verifyPlans(List plansList) {
+		for(String planName in plansList) {
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PlansSelections/AllPlans', [('Variable'): planName]))
+		}
+	}
+	
+	/*
+	 * objectName : CommercialPlans, MedicaidPlans, MedicarePlans
+	 *
+	 */
+	
+	@Keyword
+	public void verifyPlansBasedOnType(String objectName, List planNames) {
+		for(String planName in planNames) {
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PlansSelections/' + objectName, [('Variable'): planName]))
+		}
+	}
+	
+	public void verifyPayers(List payerNames) {
+		for(String payerName in payerNames) {
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PayerSelections/AllPayers', [('Variable'): payerName]))
+		}
 	}
 
-	public void verifyPlans() {
+	/*
+	 * objectName : CommercialPayers, MedicaidPayers, MedicarePayers
+	 *
+	 */
+	
+	@Keyword
+	public void verifyPayersBasedOnType(String objectName, List payerNames) {
+		for(String payerName in payerNames) {
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PayerSelections/' + objectName, [('Variable'): payerName]))
+		}
 	}
-
-	public void verifyCommercialPlans() {
-	}
-
-	public void verifyMedicaidPlans() {
-	}
-
-	public void verifyMedicarePlans() {
-	}
-
+	
 	public void verifySellSheetName(String sellSheetName) {
-		WebUI.verifyElementText(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/SellSheetName'), sellSheetName, FailureHandling.STOP_ON_FAILURE)
-		KeywordUtil.logInfo("------------------> Sellsheet name is verified on criteria section")
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/SellSheetName'), GlobalVariable.timeoutTwentySec)
+		WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/SellSheetName'), 'value', sellSheetName, 0)
 	}
-
+	
+	public void verifyViewPDFBtn() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/ViewPDFBtn'), GlobalVariable.timeoutTwentySec)
+		WebUI.verifyElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/ViewPDFBtn'))
+	}
+	
+	@Keyword
+	public void verifyOrderPDFBtn() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/OrderPDFBtn'), GlobalVariable.timeoutTwentySec)
+		WebUI.verifyElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/OrderPDFBtn'))
+	}
+	
 }

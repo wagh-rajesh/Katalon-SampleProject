@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'plan-group-commercial']</value>
+         <value>//ul[@id='plan-group-commercial']//span[contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>plan-group-commercial</value>
+      <value>//ul[@id='plan-group-commercial']//span[contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>

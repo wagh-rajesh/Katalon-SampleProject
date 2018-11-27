@@ -8,22 +8,36 @@
    <variable>
       <defaultValue>'Xiidra Multiplan Payer for PBM'</defaultValue>
       <description></description>
-      <id>dd7740ef-497b-4894-81f9-9ec13882fad7</id>
+      <id>d9adae30-0c7d-4a2c-b351-350cf8b9e915</id>
       <masked>false</masked>
       <name>templateName</name>
    </variable>
    <variable>
       <defaultValue>'Alaska'</defaultValue>
       <description></description>
-      <id>4cafb115-18e6-4af2-bc72-52332e7b8249</id>
+      <id>01ed7b73-eb60-4ff5-af39-177db2af1cdc</id>
       <masked>false</masked>
       <name>locationName</name>
    </variable>
    <variable>
       <defaultValue>'Xiidra Multiplan Payer for PBM'</defaultValue>
       <description></description>
-      <id>c7b34885-f70d-4b38-bb3a-e1fce8de2191</id>
+      <id>7aaf3aa2-0fd3-4092-89b6-def628eab38d</id>
       <masked>false</masked>
       <name>sellSheetName</name>
+   </variable>
+   <variable>
+      <defaultValue>['Premera Blue Cross']</defaultValue>
+      <description></description>
+      <id>229d4ca5-d5ce-4bce-9e2e-b332c018df98</id>
+      <masked>false</masked>
+      <name>payerName</name>
+   </variable>
+   <variable>
+      <defaultValue>['Premera Blue Cross 3-Tier', 'Premera Blue Cross 4-Tier']</defaultValue>
+      <description></description>
+      <id>9271f3f3-80fa-4b74-af8d-93a15678820d</id>
+      <masked>false</masked>
+      <name>planNames</name>
    </variable>
 </TestCaseEntity>

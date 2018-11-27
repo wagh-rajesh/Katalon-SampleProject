@@ -52,7 +52,7 @@ public class CustomTemplate {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectTemplate', [('Variable'):templateName]))
 		WebUI.waitForElementVisible(findTestObject('Common-OR/CustomTemplate/CriteriaSelections/TemplateName', [('Variable'):templateName]), GlobalVariable.timeoutTwentySec)
 	}
-	
+
 	@Keyword
 	public void clickViewPdf() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/AllPdfButtons/button_ViewPDF'), GlobalVariable.timeoutTwentySec)

@@ -29,6 +29,16 @@ public class PlansSelector {
 		expandOrCollapsePlanSelectionStep()
 	}
 
+	@Keyword
+	public void selectPlan(List planNames) {
+		expandOrCollapsePlanSelectionStep()
+		for(String planName in planNames) {
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
+			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
+			WebUI.delay(GlobalVariable.timeoutFiveSec)
+		}
+		expandOrCollapsePlanSelectionStep()
+	}
 
 	public void expandOrCollapsePlanSelectionStep() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/planStep'), GlobalVariable.timeoutTwentySec)

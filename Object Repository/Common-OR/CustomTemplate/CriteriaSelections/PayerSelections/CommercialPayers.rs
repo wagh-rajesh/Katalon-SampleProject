@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Get only medicare plans</description>
-   <name>MedicarePlans</name>
+   <description>Get only commercial plans</description>
+   <name>CommercialPayers</name>
    <tag></tag>
-   <elementGuidId>0365b9b2-99c6-4861-9a4b-31882a3dd23a</elementGuidId>
+   <elementGuidId>11e94364-5038-4331-a07c-84318ff79b99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//ul[@id='plan-group-medicare']//span[contains(text(),'${Variable}')]</value>
+         <value>//ul[@id='payer-group-commercial']//span[contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//ul[@id='plan-group-medicare']//span[contains(text(),'${Variable}')]</value>
+      <value>//ul[@id='payer-group-commercial']//span[contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>

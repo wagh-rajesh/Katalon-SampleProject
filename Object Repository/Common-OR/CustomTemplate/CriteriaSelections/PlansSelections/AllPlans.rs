@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'list-group-item']</value>
+         <value>//li[@class='list-group-item']//span[contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>list-group-item</value>
+      <value>//li[@class='list-group-item']//span[contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>
