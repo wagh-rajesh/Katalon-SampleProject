@@ -21,7 +21,7 @@ import junit.framework.Assert as Assert
 
 CustomKeywords.'com.helper.login.LoginHelper.loginToApplication'()
 
-CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'('Xiidra Multiplan Payer for PBM')
+CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'(templateName)
 
 WebUI.delay(GlobalVariable.timeoutFiveSec)
 

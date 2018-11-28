@@ -57,6 +57,7 @@ public class FileHandler {
 
 	public String getDownloadedFileName(String templateName, String locationName){
 		String fileName = ''
+		TimeZone.setDefault(TimeZone.getTimeZone('EST'))
 		String date = new Date().format( 'MMddyy' ).toString()
 		def splittedTemplateName = templateName.toLowerCase().split(' ')
 		def tempName = splittedTemplateName.join('-')

@@ -41,7 +41,7 @@ public class PayerSelector {
 		}
 		expandOrCollapsePayerSelectionStep()
 	}
-	
+
 	public void expandOrCollapsePayerSelectionStep() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'))

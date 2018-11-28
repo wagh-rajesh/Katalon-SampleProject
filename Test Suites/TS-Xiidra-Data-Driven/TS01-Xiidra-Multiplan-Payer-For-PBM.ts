@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>Executing &quot;Xiidra-Multiplan-Payer-For-PBM&quot; for multiple set of data from excel file.</description>
+   <name>TS01-Xiidra-Multiplan-Payer-For-PBM</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-11-29T01:14:58</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>1f45dba0-2e02-4f26-90f1-81439f56fbb8</testSuiteGuid>
+   <testCaseLink>
+      <guid>9153b22c-3788-47b6-ab7c-3a30edda4942</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Multiplan-Payer-For-PBM</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a97937bd-c2eb-4706-9b81-3dfc56d6e256</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TS-Xiidra-Data-Driven/TS01-Xiidra-Multiplan-Payer-For-PBM</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d9adae30-0c7d-4a2c-b351-350cf8b9e915</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a97937bd-c2eb-4706-9b81-3dfc56d6e256</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>locationName</value>
+         <variableId>01ed7b73-eb60-4ff5-af39-177db2af1cdc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7aaf3aa2-0fd3-4092-89b6-def628eab38d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a97937bd-c2eb-4706-9b81-3dfc56d6e256</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>payerName</value>
+         <variableId>229d4ca5-d5ce-4bce-9e2e-b332c018df98</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a97937bd-c2eb-4706-9b81-3dfc56d6e256</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>payerName</value>
+         <variableId>9271f3f3-80fa-4b74-af8d-93a15678820d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a97937bd-c2eb-4706-9b81-3dfc56d6e256</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>locationType</value>
+         <variableId>a2006a21-fd33-4043-a658-21f086c06c03</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

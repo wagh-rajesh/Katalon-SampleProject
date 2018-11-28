@@ -13,6 +13,13 @@
       <name>templateName</name>
    </variable>
    <variable>
+      <defaultValue>'states'</defaultValue>
+      <description></description>
+      <id>a2006a21-fd33-4043-a658-21f086c06c03</id>
+      <masked>false</masked>
+      <name>locationType</name>
+   </variable>
+   <variable>
       <defaultValue>'Alaska'</defaultValue>
       <description></description>
       <id>01ed7b73-eb60-4ff5-af39-177db2af1cdc</id>
