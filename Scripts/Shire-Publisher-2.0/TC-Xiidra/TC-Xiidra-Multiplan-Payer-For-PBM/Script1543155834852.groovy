@@ -38,11 +38,17 @@ CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 
+WebUI.delay(3)
+
+String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
+
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile)
+
+WebUI.delay(3)
+
 CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyOrderPDFBtn'()
 
 CustomKeywords.'com.helper.login.LoginHelper.logoutApplication'()
 
 CustomKeywords.'com.helper.browserhelper.CustomBrowser.closeBrowser'()
-
-WebUI.closeBrowser()
 

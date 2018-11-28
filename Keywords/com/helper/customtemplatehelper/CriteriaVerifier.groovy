@@ -35,7 +35,7 @@ public class CriteriaVerifier {
 		verifyViewPDFBtn()
 		WebUI.delay(GlobalVariable.timeoutOneSec)
 	}
-	
+
 	@Keyword
 	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPayerNames, List selectedPlansNames) {
 		verifyCriteria(templateName, locationName, sellSheetName, selectedPlansNames)
@@ -57,19 +57,19 @@ public class CriteriaVerifier {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PlansSelections/AllPlans', [('Variable'): planName]))
 		}
 	}
-	
+
 	/*
 	 * objectName : CommercialPlans, MedicaidPlans, MedicarePlans
 	 *
 	 */
-	
+
 	@Keyword
 	public void verifyPlansBasedOnType(String objectName, List planNames) {
 		for(String planName in planNames) {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PlansSelections/' + objectName, [('Variable'): planName]))
 		}
 	}
-	
+
 	public void verifyPayers(List payerNames) {
 		for(String payerName in payerNames) {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PayerSelections/AllPayers', [('Variable'): payerName]))
@@ -80,28 +80,27 @@ public class CriteriaVerifier {
 	 * objectName : CommercialPayers, MedicaidPayers, MedicarePayers
 	 *
 	 */
-	
+
 	@Keyword
 	public void verifyPayersBasedOnType(String objectName, List payerNames) {
 		for(String payerName in payerNames) {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PayerSelections/' + objectName, [('Variable'): payerName]))
 		}
 	}
-	
+
 	public void verifySellSheetName(String sellSheetName) {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/SellSheetName'), GlobalVariable.timeoutTwentySec)
 		WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/SellSheetName'), 'value', sellSheetName, 0)
 	}
-	
+
 	public void verifyViewPDFBtn() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/ViewPDFBtn'), GlobalVariable.timeoutTwentySec)
 		WebUI.verifyElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/ViewPDFBtn'))
 	}
-	
+
 	@Keyword
 	public void verifyOrderPDFBtn() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/OrderPDFBtn'), GlobalVariable.timeoutTwentySec)
 		WebUI.verifyElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/OrderPDFBtn'))
 	}
-	
 }

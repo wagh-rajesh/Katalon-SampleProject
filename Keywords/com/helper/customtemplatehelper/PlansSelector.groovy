@@ -45,4 +45,6 @@ public class PlansSelector {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/planStep'))
 		WebUI.delay(1)
 	}
+	
+	
 }
