@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>payerSTepNew</name>
+   <name>choosePayerMsg</name>
    <tag></tag>
-   <elementGuidId>017cfbd8-82fd-4a3e-b1e1-bb957897e762</elementGuidId>
+   <elementGuidId>1afa233d-f28f-43a4-9bcd-d72bbb10c9d6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='payer-panel']//div[@class='panel-heading clearfix']</value>
+         <value>//h5[@class='payer-message']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='payer-panel']//div[@class='panel-heading clearfix']</value>
+      <value>//h5[@class='payer-message']</value>
    </webElementProperties>
 </WebElementEntity>

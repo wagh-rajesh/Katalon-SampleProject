@@ -15,8 +15,10 @@ import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
 import com.kms.katalon.core.testdata.TestData
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.sun.org.apache.xpath.internal.operations.Bool
 
 import internal.GlobalVariable
 
@@ -24,19 +26,19 @@ public class PayerSelector {
 
 	@Keyword
 	public void selectPayer(String payerName) {
-//		Boolean isStepExpanded = false, isStepCollapsed = false;
-//		isStepCollapsed = WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerSTepNew'), 'aria-expanded', 'false', GlobalVariable.timeoutTwentySec)
-////		isStepCollapsed = WebUI.verifyElementNotPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
-//		if (!isStepCollapsed) {
-//			expandOrCollapsePayerSelectionStep()
-//		}
+		if (!checkIfCollapsedOrExpand()) {
+			// the step is already collapsed. Need to expand accordian
+			println("@@@@@@@@@@@@@@@@@@@@@@@@ The Payer step is expanded")
+			expandOrCollapsePayerSelectionStep()
+		}
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayer', [('Variable'): payerName]))
 		WebUI.delay(GlobalVariable.timeoutTenSec)
-//		isStepExpanded = WebUI.verifyElementPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
-//		if (isStepExpanded) {
-//			expandOrCollapsePayerSelectionStep()
-//		}
+		if (checkIfCollapsedOrExpand()) {
+			// the step is already expanded. Need to collapse accordian
+			println("@@@@@@@@@@@@@@@@@@@@@@@@ The Payer step is collapsed")
+			expandOrCollapsePayerSelectionStep()
+		}
 	}
 
 	@Keyword
@@ -58,9 +60,14 @@ public class PayerSelector {
 	}
 
 	public void expandOrCollapsePayerSelectionStep() {
-//		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'))
 		WebUI.delay(1)
 	}
 
+	private boolean checkIfCollapsedOrExpand() {
+		TestObject payerStepObj = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/choosePayerMsg')
+		boolean isExpanded = WebUI.verifyElementPresent(payerStepObj, GlobalVariable.timeoutTwentySec)
+		return isExpanded;
+	}
 }

@@ -5,4 +5,32 @@
    <tag>Xiidra</tag>
    <comment></comment>
    <testCaseGuid>a3b2e02b-e66b-4462-94c5-4179bc898b9a</testCaseGuid>
+   <variable>
+      <defaultValue>'Xiidra Single Plan Formulary Grid with National option'</defaultValue>
+      <description></description>
+      <id>1d97dbf7-334d-48a5-bd26-f097cbc8817f</id>
+      <masked>false</masked>
+      <name>templateName</name>
+   </variable>
+   <variable>
+      <defaultValue>'national'</defaultValue>
+      <description></description>
+      <id>69578723-80ec-4847-b1aa-3e4bbe8f303e</id>
+      <masked>false</masked>
+      <name>locationType</name>
+   </variable>
+   <variable>
+      <defaultValue>'shire_plan'</defaultValue>
+      <description></description>
+      <id>ab522134-6d72-4782-9ec5-8975da16122b</id>
+      <masked>false</masked>
+      <name>planOrPayer</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>60a27b43-f1a0-46a3-bb85-b98b3216b1cc</id>
+      <masked>false</masked>
+      <name>planOrPayerName</name>
+   </variable>
 </TestCaseEntity>
