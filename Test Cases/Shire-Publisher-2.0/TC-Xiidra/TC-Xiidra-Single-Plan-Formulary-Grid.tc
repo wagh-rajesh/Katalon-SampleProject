@@ -40,4 +40,11 @@
       <masked>false</masked>
       <name>planOrPayerName</name>
    </variable>
+   <variable>
+      <defaultValue>'Xiidra Single Plan Formulary Grid'</defaultValue>
+      <description></description>
+      <id>15b2e8f5-dbef-463b-b40e-9affd1b4ece4</id>
+      <masked>false</masked>
+      <name>sellSheetName</name>
+   </variable>
 </TestCaseEntity>

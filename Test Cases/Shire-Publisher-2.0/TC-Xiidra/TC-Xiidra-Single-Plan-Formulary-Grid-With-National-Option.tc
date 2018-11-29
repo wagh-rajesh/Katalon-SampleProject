@@ -33,4 +33,18 @@
       <masked>false</masked>
       <name>planOrPayerName</name>
    </variable>
+   <variable>
+      <defaultValue>'National'</defaultValue>
+      <description></description>
+      <id>1d46974c-c9be-4d73-bc65-ed139acfa319</id>
+      <masked>false</masked>
+      <name>locationName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Xiidra Single Plan Formulary Grid with National option'</defaultValue>
+      <description></description>
+      <id>3cf4a75e-4ea5-48e6-a9db-f33ae55c24c1</id>
+      <masked>false</masked>
+      <name>sellSheetName</name>
+   </variable>
 </TestCaseEntity>

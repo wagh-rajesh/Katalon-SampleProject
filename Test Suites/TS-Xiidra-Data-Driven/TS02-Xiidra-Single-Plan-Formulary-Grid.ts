@@ -4,7 +4,7 @@
    <name>TS02-Xiidra-Single-Plan-Formulary-Grid</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-11-29T15:18:09</lastRun>
+   <lastRun>2018-11-29T18:18:03</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -54,6 +54,12 @@
          <type>DATA_COLUMN</type>
          <value>planOrPayerName</value>
          <variableId>f835d8f7-ed5a-43ef-8202-d9b507f7fcc5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>15b2e8f5-dbef-463b-b40e-9affd1b4ece4</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
