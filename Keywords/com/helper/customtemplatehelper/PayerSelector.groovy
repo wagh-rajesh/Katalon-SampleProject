@@ -24,27 +24,43 @@ public class PayerSelector {
 
 	@Keyword
 	public void selectPayer(String payerName) {
-		expandOrCollapsePayerSelectionStep()
+//		Boolean isStepExpanded = false, isStepCollapsed = false;
+//		isStepCollapsed = WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerSTepNew'), 'aria-expanded', 'false', GlobalVariable.timeoutTwentySec)
+////		isStepCollapsed = WebUI.verifyElementNotPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
+//		if (!isStepCollapsed) {
+//			expandOrCollapsePayerSelectionStep()
+//		}
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayer', [('Variable'): payerName]))
 		WebUI.delay(GlobalVariable.timeoutTenSec)
-		expandOrCollapsePayerSelectionStep()
+//		isStepExpanded = WebUI.verifyElementPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
+//		if (isStepExpanded) {
+//			expandOrCollapsePayerSelectionStep()
+//		}
 	}
 
 	@Keyword
 	public void selectPayer(List payerNames) {
-		expandOrCollapsePayerSelectionStep()
+		Boolean isStepAlreadyExpanded = false
+		isStepAlreadyExpanded = WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
+		if (isStepAlreadyExpanded) {
+			expandOrCollapsePayerSelectionStep()
+		}
 		for(String payerName in payerNames) {
 			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
 			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayer', [('Variable'): payerName]))
 			WebUI.delay(GlobalVariable.timeoutFiveSec)
 		}
-		expandOrCollapsePayerSelectionStep()
+		isStepAlreadyExpanded = WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
+		if (isStepAlreadyExpanded) {
+			expandOrCollapsePayerSelectionStep()
+		}
 	}
 
 	public void expandOrCollapsePayerSelectionStep() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
+//		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payerStep'))
 		WebUI.delay(1)
 	}
+
 }

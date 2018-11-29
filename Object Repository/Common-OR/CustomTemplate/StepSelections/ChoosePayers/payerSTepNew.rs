@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>payerStep</name>
+   <name>payerSTepNew</name>
    <tag></tag>
-   <elementGuidId>92231cf1-1277-4bbe-9d91-26cf8af0ad85</elementGuidId>
+   <elementGuidId>017cfbd8-82fd-4a3e-b1e1-bb957897e762</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

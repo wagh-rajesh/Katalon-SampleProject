@@ -5,4 +5,39 @@
    <tag>Xiidra</tag>
    <comment></comment>
    <testCaseGuid>dfe6f4c7-fe96-4e6a-8592-15de58dc525f</testCaseGuid>
+   <variable>
+      <defaultValue>'Xiidra Single Plan Formulary Grid'</defaultValue>
+      <description></description>
+      <id>3da12bb4-8659-40fa-afce-07d97a45436b</id>
+      <masked>false</masked>
+      <name>templateName</name>
+   </variable>
+   <variable>
+      <defaultValue>'states'</defaultValue>
+      <description></description>
+      <id>e0c4908b-bd5d-4df6-a85b-a2da47acc34a</id>
+      <masked>false</masked>
+      <name>locationType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alaska'</defaultValue>
+      <description></description>
+      <id>ef05c59f-029f-4269-9be1-10d8ab09218f</id>
+      <masked>false</masked>
+      <name>locationName</name>
+   </variable>
+   <variable>
+      <defaultValue>'shire_plan'</defaultValue>
+      <description></description>
+      <id>6dcd00b1-649a-4589-bf89-be0810446db1</id>
+      <masked>false</masked>
+      <name>planOrPayer</name>
+   </variable>
+   <variable>
+      <defaultValue>'CVS Caremark Advanced Control Specialty'</defaultValue>
+      <description></description>
+      <id>f835d8f7-ed5a-43ef-8202-d9b507f7fcc5</id>
+      <masked>false</masked>
+      <name>planOrPayerName</name>
+   </variable>
 </TestCaseEntity>
