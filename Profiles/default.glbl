@@ -44,4 +44,9 @@
       <initValue>1</initValue>
       <name>timeoutOneSec</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>30</initValue>
+      <name>timeoutThirtySec</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

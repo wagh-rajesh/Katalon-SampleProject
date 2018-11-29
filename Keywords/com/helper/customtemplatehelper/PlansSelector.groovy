@@ -23,7 +23,9 @@ public class PlansSelector {
 	@Keyword
 	public void selectPlan(String planName) {
 		expandOrCollapsePlanSelectionStep()
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
+		// Below explicit wait is needed as National type plans takes more time to load
+		WebUI.delay(GlobalVariable.timeoutThirtySec)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutThirtySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
 		WebUI.delay(GlobalVariable.timeoutTenSec)
 		expandOrCollapsePlanSelectionStep()

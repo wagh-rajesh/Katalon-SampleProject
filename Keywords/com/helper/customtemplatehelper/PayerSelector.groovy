@@ -28,15 +28,13 @@ public class PayerSelector {
 	public void selectPayer(String payerName) {
 		if (!checkIfCollapsedOrExpand()) {
 			// the step is already collapsed. Need to expand accordian
-			println("@@@@@@@@@@@@@@@@@@@@@@@@ The Payer step is expanded")
 			expandOrCollapsePayerSelectionStep()
 		}
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutThirtySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayer', [('Variable'): payerName]))
 		WebUI.delay(GlobalVariable.timeoutTenSec)
 		if (checkIfCollapsedOrExpand()) {
 			// the step is already expanded. Need to collapse accordian
-			println("@@@@@@@@@@@@@@@@@@@@@@@@ The Payer step is collapsed")
 			expandOrCollapsePayerSelectionStep()
 		}
 	}

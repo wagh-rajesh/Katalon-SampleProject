@@ -19,16 +19,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class PlanOrPayerSelector {
-	
+
 	@Keyword
 	public void selectPlanOrPayer(String planOrPayerName) {
 		expandOrCollapsePlanPayerSelectionStep()
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/selectPlanOrPayer', [('Variable'): planOrPayerName]))
-		WebUI.delay(GlobalVariable.timeoutTenSec)
+		WebUI.delay(GlobalVariable.timeoutTwentySec)
 		expandOrCollapsePlanPayerSelectionStep()
 	}
-	
+
 	public void expandOrCollapsePlanPayerSelectionStep() {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'))

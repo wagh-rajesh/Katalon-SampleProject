@@ -32,7 +32,7 @@ public class LocationSelector {
 		selectLocationType(locationType)
 		expandOrCollapseLocationStep()
 	}
-	
+
 	@Keyword
 	public void selectLocation(String locationType, String stateName, Integer waitTimeout) {
 		expandOrCollapseLocationStep()

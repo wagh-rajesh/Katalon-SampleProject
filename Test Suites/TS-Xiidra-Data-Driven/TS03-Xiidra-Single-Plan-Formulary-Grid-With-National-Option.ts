@@ -4,6 +4,7 @@
    <name>TS03-Xiidra-Single-Plan-Formulary-Grid-With-National-Option</name>
    <tag></tag>
    <isRerun>false</isRerun>
+   <lastRun>2018-11-29T18:06:59</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -15,6 +16,15 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Single-Plan-Formulary-Grid-With-National-Option</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>86c68475-57cb-45a3-a4df-cc5ea41d438b</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TS-Xiidra-Data-Driven/TS03-Xiidra-Single-Plan-Formulary-Grid-With-National-Option</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -28,15 +38,15 @@
          <variableId>69578723-80ec-4847-b1aa-3e4bbe8f303e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>86c68475-57cb-45a3-a4df-cc5ea41d438b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>planOrPayer</value>
          <variableId>ab522134-6d72-4782-9ec5-8975da16122b</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>86c68475-57cb-45a3-a4df-cc5ea41d438b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>planOrPayerName</value>
          <variableId>60a27b43-f1a0-46a3-bb85-b98b3216b1cc</variableId>
       </variableLink>
    </testCaseLink>
