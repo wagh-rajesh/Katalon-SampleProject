@@ -32,12 +32,15 @@ public class PlansSelector {
 	}
 
 	@Keyword
-	public void selectPlan(List planNames) {
+	public void selectPlan(String planNames, boolean formatData) {
 		expandOrCollapsePlanSelectionStep()
-		for(String planName in planNames) {
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
-			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
-			WebUI.delay(GlobalVariable.timeoutFiveSec)
+		if (formatData) {
+			List formattedPlanNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planNames)
+			for(String planName in formattedPlanNames) {
+				WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
+				WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
+				WebUI.delay(GlobalVariable.timeoutFiveSec)
+			}
 		}
 		expandOrCollapsePlanSelectionStep()
 	}

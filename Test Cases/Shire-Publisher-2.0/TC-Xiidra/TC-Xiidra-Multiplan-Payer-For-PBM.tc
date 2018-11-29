@@ -34,14 +34,14 @@
       <name>sellSheetName</name>
    </variable>
    <variable>
-      <defaultValue>['Premera Blue Cross']</defaultValue>
+      <defaultValue>'Premera Blue Cross '</defaultValue>
       <description></description>
       <id>229d4ca5-d5ce-4bce-9e2e-b332c018df98</id>
       <masked>false</masked>
       <name>payerName</name>
    </variable>
    <variable>
-      <defaultValue>['Premera Blue Cross 3-Tier', 'Premera Blue Cross 4-Tier']</defaultValue>
+      <defaultValue>'Premera Blue Cross 3-Tier, Premera Blue Cross 4-Tier'</defaultValue>
       <description></description>
       <id>9271f3f3-80fa-4b74-af8d-93a15678820d</id>
       <masked>false</masked>

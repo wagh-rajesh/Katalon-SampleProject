@@ -31,7 +31,7 @@ CustomKeywords.'com.helper.customtemplatehelper.CopaySelector.selectCopayOption'
 
 CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(payerName)
 
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planNames)
+CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planNames, true)
 
 CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, 
     payerName, planNames)
