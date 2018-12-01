@@ -34,7 +34,7 @@
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>'CVS Caremark Advanced Control Specialty'</defaultValue>
+      <defaultValue>['CVS Caremark Advanced Control Specialty']</defaultValue>
       <description></description>
       <id>f835d8f7-ed5a-43ef-8202-d9b507f7fcc5</id>
       <masked>false</masked>

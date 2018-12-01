@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>d84c3d3f-f599-4f0d-84ed-68ef61ee0cf5</dataFileGUID>
-   <dataSourceUrl>/Users/rwagh/Desktop/Xiidra-Multiplan-Payer-For-PBM.xlsx</dataSourceUrl>
+   <dataSourceUrl>/Users/rwagh/Desktop/Test Data/Xiidra-Multiplan-Payer-For-PBM.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

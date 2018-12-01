@@ -19,9 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class DataFormatter {
-	
+
 	public List formatData(String inputTestData) {
-		List<String> listItems = Arrays.asList(inputTestData.split("\\s*,\\s*"));
-		return listItems;
+		def list = inputTestData.split(';').collect{it as String}
+		return list;
 	}
 }

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='payer-panel']//div[@class='panel-heading clearfix']</value>
+         <value>//div[@id='payer-panel']//p[@class='pull-left']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='payer-panel']//div[@class='panel-heading clearfix']</value>
+      <value>//div[@id='payer-panel']//p[@class='pull-left']</value>
    </webElementProperties>
 </WebElementEntity>

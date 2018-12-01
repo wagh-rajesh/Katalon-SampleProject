@@ -33,7 +33,7 @@ if (planOrPayer == 'shire_plan') {
     CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerName)
 }
 
-CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, [planOrPayerName])
+CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, planOrPayerName)
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 
