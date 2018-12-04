@@ -15,19 +15,26 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.helper.login.LoginHelper.loginToApplication'()
 
-CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.scrollToTemplate'('Xiidra Multiplan Formulary Grid')
+CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.scrollToTemplate'(templateName)
 
-CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'('Xiidra Multiplan Formulary Grid')
+CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'(templateName)
 
 WebUI.delay(GlobalVariable.timeoutFiveSec)
 
-CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('states', 'Alaska', GlobalVariable.timeoutTenSec)
+CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'(locationType, locationName, GlobalVariable.timeoutTenSec)
 
-CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.selectPlanOrPayer'('shire_plan')
+CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.selectPlanOrPayer'(planOrPayer)
 
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('Premera Blue Cross 3-Tier')
+if (planOrPayerNames instanceof String ) {
+	planOrPayerNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planOrPayerNames)
+}
 
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'('CVS Caremark Advanced Control Specialty')
+if (planOrPayer == 'shire_plan') {
+	CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)
+} else {
+	hasPlanOrPayer = CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.hasPlanOrPayerStep'()
+	CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer)
+}
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 

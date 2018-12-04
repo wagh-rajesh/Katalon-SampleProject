@@ -58,6 +58,42 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Multiplan-Formulary-Grid</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d290bf36-15ec-435f-adf5-e3171ecbf033</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c31321b-edb1-494a-a7ef-c44ea2deac5c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fee37579-e2c3-46ae-9ae6-e85b206882fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>742a9ee9-b9e2-4a9e-a4fd-fb577c9b6f32</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>238a3199-d310-4df3-8686-4a235efc88ec</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>23bda59d-8884-473c-8ef6-b0d334d0191b</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>75c0d937-c7b0-4e6b-b51b-4767d740ae37</guid>

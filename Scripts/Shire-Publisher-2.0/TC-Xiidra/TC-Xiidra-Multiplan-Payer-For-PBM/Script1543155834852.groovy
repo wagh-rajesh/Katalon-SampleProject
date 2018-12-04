@@ -7,7 +7,7 @@ CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.selectTemplate'(t
 
 WebUI.delay(GlobalVariable.timeoutTenSec)
 
-CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'('states', 'Alaska', GlobalVariable.timeoutTenSec)
+CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'(locationType, locationName, GlobalVariable.timeoutTenSec)
 
 CustomKeywords.'com.helper.customtemplatehelper.CopaySelector.selectCopayOption'()
 
@@ -15,7 +15,7 @@ if (payerName instanceof String ) {
 	payerName = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(payerName)
 }
 
-CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(payerName)
+CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(payerName, false)
 
 if (planNames instanceof String ) {
 	planNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planNames)

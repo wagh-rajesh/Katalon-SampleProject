@@ -34,4 +34,8 @@ public class PlanOrPayerSelector {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'))
 		WebUI.delay(1)
 	}
+	
+	public boolean hasPlanOrPayerStep() {
+		return true
+	}
 }

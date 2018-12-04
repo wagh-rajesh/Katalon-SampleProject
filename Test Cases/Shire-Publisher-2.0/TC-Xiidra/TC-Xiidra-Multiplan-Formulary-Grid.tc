@@ -5,4 +5,46 @@
    <tag>Xiidra</tag>
    <comment></comment>
    <testCaseGuid>708ad00a-ba47-4692-aa96-a0f300a387c9</testCaseGuid>
+   <variable>
+      <defaultValue>'Xiidra Multiplan Formulary Grid'</defaultValue>
+      <description></description>
+      <id>d290bf36-15ec-435f-adf5-e3171ecbf033</id>
+      <masked>false</masked>
+      <name>templateName</name>
+   </variable>
+   <variable>
+      <defaultValue>'states'</defaultValue>
+      <description></description>
+      <id>2c31321b-edb1-494a-a7ef-c44ea2deac5c</id>
+      <masked>false</masked>
+      <name>locationType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alaska'</defaultValue>
+      <description></description>
+      <id>fee37579-e2c3-46ae-9ae6-e85b206882fe</id>
+      <masked>false</masked>
+      <name>locationName</name>
+   </variable>
+   <variable>
+      <defaultValue>'shire_plan'</defaultValue>
+      <description></description>
+      <id>742a9ee9-b9e2-4a9e-a4fd-fb577c9b6f32</id>
+      <masked>false</masked>
+      <name>planOrPayer</name>
+   </variable>
+   <variable>
+      <defaultValue>['Premera Blue Cross 4-Tier', 'Premera Blue Cross 3-Tier']</defaultValue>
+      <description></description>
+      <id>238a3199-d310-4df3-8686-4a235efc88ec</id>
+      <masked>false</masked>
+      <name>planOrPayerNames</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>23bda59d-8884-473c-8ef6-b0d334d0191b</id>
+      <masked>false</masked>
+      <name>loadPlansBasedOnPayer</name>
+   </variable>
 </TestCaseEntity>
