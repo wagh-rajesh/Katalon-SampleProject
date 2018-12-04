@@ -1,2 +1,2 @@
 # Katalon-SampleProject
-Test project for Katalon Automation Framework
+Katalon Test Automation project for Publisher 2.0 platform (Shire)
