@@ -184,11 +184,71 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Multiplan-With-Status</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>443d9544-a056-4e18-97e7-2d60727fc0a2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>70598a9d-6772-48de-be3b-5caebf345f4c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>db6ea410-9242-42ec-b25d-88d3bc3536c8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ce6cc6ec-b809-4147-8d11-35dc741ee652</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>de654a76-8be5-472b-be0e-387af9358dfc</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>62bc7bb8-2ad5-4a34-87ab-15fa0de48d25</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Multiplan-With-Copay</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>01c47976-bc3f-409a-8d4f-84d8b04c7c35</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0bd00d39-1235-48f4-b2c2-f6ca8e6e919b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc39ec1b-9ec9-4978-9eb8-0728cb10d02a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2b0cc479-6937-4474-807a-186f9718e127</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5eb40b89-516d-4dd9-b5f1-ccffbb8a6d8e</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

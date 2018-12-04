@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS06-Xiidra-Multiplan-With-Status</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <lastRun>2018-12-04T15:06:16</lastRun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>849e754f-96bf-4840-849b-06df25d91e05</testSuiteGuid>
+   <testCaseLink>
+      <guid>2756b5a6-d6b9-4f26-a467-7d7d0730a593</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Shire-Publisher-2.0/TC-Xiidra/TC-Xiidra-Multiplan-With-Status</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2ba70915-033d-4b97-813e-ad5e4a173155</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/TS-Xiidra-Data-Driven/TS06-Xiidra-Multiplan-With-Status</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>443d9544-a056-4e18-97e7-2d60727fc0a2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>locationType</value>
+         <variableId>70598a9d-6772-48de-be3b-5caebf345f4c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>locationName</value>
+         <variableId>db6ea410-9242-42ec-b25d-88d3bc3536c8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>planOrPayer</value>
+         <variableId>ce6cc6ec-b809-4147-8d11-35dc741ee652</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>planOrPayerNames</value>
+         <variableId>de654a76-8be5-472b-be0e-387af9358dfc</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

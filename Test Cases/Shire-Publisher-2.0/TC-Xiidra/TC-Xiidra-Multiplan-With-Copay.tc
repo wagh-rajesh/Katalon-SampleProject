@@ -5,4 +5,39 @@
    <tag>Xiidra</tag>
    <comment></comment>
    <testCaseGuid>11380ec3-7c2d-4047-96c2-85447104a6f8</testCaseGuid>
+   <variable>
+      <defaultValue>'Xiidra Multiplan With Copay'</defaultValue>
+      <description></description>
+      <id>01c47976-bc3f-409a-8d4f-84d8b04c7c35</id>
+      <masked>false</masked>
+      <name>templateName</name>
+   </variable>
+   <variable>
+      <defaultValue>'states'</defaultValue>
+      <description></description>
+      <id>0bd00d39-1235-48f4-b2c2-f6ca8e6e919b</id>
+      <masked>false</masked>
+      <name>locationType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alaska'</defaultValue>
+      <description></description>
+      <id>cc39ec1b-9ec9-4978-9eb8-0728cb10d02a</id>
+      <masked>false</masked>
+      <name>locationName</name>
+   </variable>
+   <variable>
+      <defaultValue>'shire_plan'</defaultValue>
+      <description></description>
+      <id>2b0cc479-6937-4474-807a-186f9718e127</id>
+      <masked>false</masked>
+      <name>planOrPayer</name>
+   </variable>
+   <variable>
+      <defaultValue>['Express Scripts National Preferred', 'Premera Blue Cross 3-Tier', 'CVS Caremark Advanced Control Specialty']</defaultValue>
+      <description></description>
+      <id>5eb40b89-516d-4dd9-b5f1-ccffbb8a6d8e</id>
+      <masked>false</masked>
+      <name>planOrPayerNames</name>
+   </variable>
 </TestCaseEntity>
