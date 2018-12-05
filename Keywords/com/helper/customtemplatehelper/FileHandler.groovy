@@ -64,7 +64,7 @@ public class FileHandler {
 		fileName = tempName + '_' + locationName + '_' + date
 		return fileName
 	}
-
+	
 	@Keyword
 	public boolean verifyFileData(String pdfFilePath) {
 		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
@@ -75,8 +75,30 @@ public class FileHandler {
 		String pdfText = new PDFTextStripper().getText(doc);
 		doc.close();
 		bis.close();
-		println("################## Downloaded PDF contents ##################")
+		println("################## Downloaded PDF contents ##################\n")
 		println(pdfText)
-		println("################## End of PDF Contents ######################")
+		println("################## End of PDF Contents ######################\n")
+	}
+	
+	@Keyword
+	public boolean verifyFileData(String pdfFilePath, List planNames) {
+		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
+		JsonElement jsonfileElement = new JsonPrimitive(modifiedInputFilePath)
+		URL TestURL = new URL(jsonfileElement.getAsString())
+		BufferedInputStream bis = new BufferedInputStream(TestURL.openStream());
+		PDDocument doc = PDDocument.load(bis);
+		String pdfText = new PDFTextStripper().getText(doc);
+		doc.close();
+		bis.close();
+		println("\n################## Downloaded PDF contents ##################\n")
+		println(pdfText)
+		for( String planName in planNames) {
+			if(pdfText.contains(planName)) {
+				println(planName + " -> Present in PDF data")
+			} else {
+				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
+			}
+		}
+		println("\n################## End of PDF Contents ######################\n")
 	}
 }
