@@ -3,6 +3,7 @@ package com.helper.customtemplatehelper
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.testcase.Variable
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -32,7 +33,7 @@ public class PayerSelector {
 		if(!hasPlanOrPayerStep) {
 			expandOrCollapsePayerSelectionStep()
 		}
-		
+
 		for(String payerName in payerNames) {
 			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/payersTableElement'), GlobalVariable.timeoutTwentySec)
 			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayer', [('Variable'): payerName]))
@@ -51,5 +52,12 @@ public class PayerSelector {
 		TestObject payerStepObj = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/choosePayerMsg')
 		boolean isExpanded = WebUI.verifyElementPresent(payerStepObj, GlobalVariable.timeoutTwentySec)
 		return isExpanded;
+	}
+
+	public void setPayerType(String payerType) {
+		TestObject payerTypeObj = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayerType', [('Variable'): payerType])
+		WebUI.verifyElementVisible(payerTypeObj, GlobalVariable.timeoutThirtySec)
+		WebUI.click(payerTypeObj)
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
 	}
 }

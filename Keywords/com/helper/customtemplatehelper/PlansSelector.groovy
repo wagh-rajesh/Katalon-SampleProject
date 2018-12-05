@@ -34,6 +34,7 @@ public class PlansSelector {
 	@Keyword
 	public void selectPlan(List planNames) {
 		expandOrCollapsePlanSelectionStep()
+
 		for(String planName in planNames) {
 			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
 			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
@@ -46,5 +47,12 @@ public class PlansSelector {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/planStep'), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/planStep'))
 		WebUI.delay(1)
+	}
+
+	public void setPlanType(String planType) {
+		TestObject planTypeObj = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlanType', [('Variable'): planType])
+		WebUI.verifyElementVisible(planTypeObj , GlobalVariable.timeoutThirtySec)
+		WebUI.click(planTypeObj)
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
 	}
 }

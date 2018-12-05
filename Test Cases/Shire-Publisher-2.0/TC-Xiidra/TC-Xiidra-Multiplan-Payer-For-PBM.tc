@@ -47,4 +47,11 @@
       <masked>false</masked>
       <name>planNames</name>
    </variable>
+   <variable>
+      <defaultValue>'commercial'</defaultValue>
+      <description></description>
+      <id>760237d7-110d-4b62-bf5c-5c559d45300d</id>
+      <masked>false</masked>
+      <name>planType</name>
+   </variable>
 </TestCaseEntity>
