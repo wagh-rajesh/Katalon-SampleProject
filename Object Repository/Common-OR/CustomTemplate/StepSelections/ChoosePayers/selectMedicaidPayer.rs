@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectMedicaidPayer</name>
+   <tag></tag>
+   <elementGuidId>9e7238c0-4e54-439e-aed7-c2ab0dcd14cb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//table[@id='medicaid-payers-table']//td[contains(text(),'${Variable}')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//table[@id='medicaid-payers-table']//td[contains(text(),'${Variable}')]</value>
+   </webElementProperties>
+</WebElementEntity>

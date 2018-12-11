@@ -27,14 +27,14 @@
       <name>locationName</name>
    </variable>
    <variable>
-      <defaultValue>'shire_plan'</defaultValue>
+      <defaultValue>'payer'</defaultValue>
       <description></description>
       <id>2b0cc479-6937-4474-807a-186f9718e127</id>
       <masked>false</masked>
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['Express Scripts National Preferred', 'Premera Blue Cross 3-Tier', 'CVS Caremark Advanced Control Specialty']</defaultValue>
+      <defaultValue>['Medicare-United', 'Medicare-Humana', 'Commercial-Premera Blue Cross']</defaultValue>
       <description></description>
       <id>5eb40b89-516d-4dd9-b5f1-ccffbb8a6d8e</id>
       <masked>false</masked>
