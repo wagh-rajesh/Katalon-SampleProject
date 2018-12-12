@@ -21,10 +21,10 @@ if (planOrPayerNames instanceof String ) {
 List<String> planOrPayerNamesList = []
 
 if (planOrPayer == 'shire_plan') {
-	CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)
+	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)
 } else {
 	hasPlanOrPayer = CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.hasPlanOrPayerStep'()
-	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer)
+	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer, planOrPayer)
 }
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()

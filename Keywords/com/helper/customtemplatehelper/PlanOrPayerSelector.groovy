@@ -34,8 +34,25 @@ public class PlanOrPayerSelector {
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlanOrPayer/planOrPayerStep'))
 		WebUI.delay(1)
 	}
-	
+
 	public boolean hasPlanOrPayerStep() {
 		return true
+	}
+
+	public String selectPlanType(String planOrPayerType, String planOrPayer) {
+		String testObjPath = 'Object Repository/Common-OR/CustomTemplate/StepSelections/'
+		String planOrPayerName = 'Plan' // setting default value
+		if(planOrPayer == 'shire_plan' || planOrPayer == 'plan') {
+			testObjPath += 'ChoosePlans/selectPlanType'
+			planOrPayerName = 'Plan'
+		} else {
+			testObjPath += 'ChoosePayers/selectPayerType'
+			planOrPayerName = 'Payer'
+		}
+		WebUI.waitForElementClickable(findTestObject(testObjPath, [('Variable'): planOrPayerType]), GlobalVariable.timeoutThirtySec)
+		WebUI.click(findTestObject(testObjPath, [('Variable'): planOrPayerType]))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		String webEle = 'select' + planOrPayerType + planOrPayerName
+		return webEle;
 	}
 }

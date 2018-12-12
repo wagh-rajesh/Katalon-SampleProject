@@ -29,7 +29,7 @@ public class PayerSelector {
 	}
 
 	@Keyword
-	public List selectPayer(List payerNames, boolean hasPlanOrPayerStep) {
+	public List selectPayer(List payerNames, boolean hasPlanOrPayerStep, String planOrPayer) {
 		List<String> payerNamesList = []
 		if(!hasPlanOrPayerStep) {
 			expandOrCollapsePayerSelectionStep()
@@ -40,7 +40,7 @@ public class PayerSelector {
 			String payerType = payerTypeNameCombination[0].trim()
 			String payerName = payerTypeNameCombination[1].trim()
 			payerNamesList.add(payerName)
-			String webEleName =  selectPayerType(payerType.capitalize())
+			String webEleName = selectPayerType(payerType.capitalize())
 			TestObject payerTestOject = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/' + webEleName , [('Variable'): payerName])
 			WebUI.waitForElementPresent(payerTestOject, GlobalVariable.timeoutTwentySec)
 			WebUI.click(payerTestOject)
@@ -63,31 +63,12 @@ public class PayerSelector {
 		return isExpanded;
 	}
 
-	public String selectPayerType(String payerType) {
-		WebUI.waitForElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayerType', [('Variable'): payerType]), GlobalVariable.timeoutThirtySec)
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayerType', [('Variable'): payerType]))
+	public String selectPayerType(String planOrPayerType) {
+		String testObjPath = 'Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePayers/selectPayerType'
+		WebUI.waitForElementClickable(findTestObject(testObjPath, [('Variable'): planOrPayerType]), GlobalVariable.timeoutThirtySec)
+		WebUI.click(findTestObject(testObjPath, [('Variable'): planOrPayerType]))
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
-		String webEle = ''
-		switch(payerType) {
-			case 'Commercial':
-				webEle = 'selectCommercialPayer'
-				break;
-			case 'Medicare':
-				webEle = 'selectMedicarePayer'
-				break;
-			case 'Medicaid':
-				webEle = 'selectMedicaidPayer'
-				break;
-			case 'State Medicaid':
-				webEle = 'selectStateMedicaidPayer'
-				break;
-			case 'Managed Medicaid':
-				webEle = 'selectManagedMedicaidPayer'
-				break;
-			default:
-				KeywordUtil.markFailedAndStop("[Custom Keyword Error] : Could not identify the segment for plan selection.")
-				break;
-		}
+		String webEle = 'select' + planOrPayerType + 'Payer'
 		return webEle;
 	}
 }

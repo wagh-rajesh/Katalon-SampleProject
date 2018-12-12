@@ -34,15 +34,23 @@ public class PlansSelector {
 	}
 
 	@Keyword
-	public void selectPlan(List planNames, String planType) {
+	public List selectPlan(List planNames) {
+		List<String> planNamesList = []
 		expandOrCollapsePlanSelectionStep()
-		selectPlanType(planType)
-		for(String planName in planNames) {
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/plansTableElement'), GlobalVariable.timeoutTwentySec)
-			WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlan', [('Variable'): planName]))
+		for(String planTypeAndName in planNames) {
+			def planTypeNameCombination = planTypeAndName.split('-')
+			String planType = planTypeNameCombination[0].trim()
+			String planName = planTypeNameCombination[1].trim()
+			planNamesList.add(planName)
+			String webEleName = selectPlanType(planType.capitalize())
+			TestObject planTestOject = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/' + webEleName , [('Variable'): planName])
+			WebUI.waitForElementPresent(planTestOject, GlobalVariable.timeoutTwentySec)
+			WebUI.click(planTestOject)
 			WebUI.delay(GlobalVariable.timeoutFiveSec)
 		}
+		println("Generated payer name list ----------------> " + planNamesList)
 		expandOrCollapsePlanSelectionStep()
+		return planNamesList
 	}
 
 	public void expandOrCollapsePlanSelectionStep() {
@@ -51,8 +59,12 @@ public class PlansSelector {
 		WebUI.delay(1)
 	}
 
-	public void selectPlanType(String planType) {
-		WebUI.waitForElementClickable(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlanType', [('Variable'): planType]), GlobalVariable.timeoutThirtySec)
+	public String selectPlanType(String planOrPayerType) {
+		String testObjPath = 'Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlanType'
+		WebUI.waitForElementClickable(findTestObject(testObjPath, [('Variable'): planOrPayerType]), GlobalVariable.timeoutThirtySec)
+		WebUI.click(findTestObject(testObjPath, [('Variable'): planOrPayerType]))
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		String webEle = 'select' + planOrPayerType + 'Plan'
+		return webEle;
 	}
 }

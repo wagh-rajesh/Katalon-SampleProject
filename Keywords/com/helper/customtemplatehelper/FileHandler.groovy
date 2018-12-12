@@ -64,7 +64,7 @@ public class FileHandler {
 		fileName = tempName + '_' + locationName + '_' + date
 		return fileName
 	}
-	
+
 	@Keyword
 	public boolean verifyFileData(String pdfFilePath) {
 		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
@@ -79,10 +79,12 @@ public class FileHandler {
 		println(pdfText)
 		println("################## End of PDF Contents ######################\n")
 	}
-	
+
 	@Keyword
 	public boolean verifyFileData(String pdfFilePath, List planNames) {
 		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
+		println("Downloaded File Path ------------------> " + modifiedInputFilePath)
+		WebUI.delay(GlobalVariable.timeoutFiveSec)
 		JsonElement jsonfileElement = new JsonPrimitive(modifiedInputFilePath)
 		URL TestURL = new URL(jsonfileElement.getAsString())
 		BufferedInputStream bis = new BufferedInputStream(TestURL.openStream());

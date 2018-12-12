@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectCommercialPlan</name>
+   <tag></tag>
+   <elementGuidId>83272166-e85b-4ada-8a89-591d167b62ea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//table[@id='commercial-table']//td[contains(text(),'${Variable}')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//table[@id='commercial-table']//td[contains(text(),'${Variable}')]</value>
+   </webElementProperties>
+</WebElementEntity>
