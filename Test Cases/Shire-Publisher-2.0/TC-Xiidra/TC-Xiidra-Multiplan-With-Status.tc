@@ -34,7 +34,7 @@
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['University of Alaska', 'Express Scripts National Preferred']</defaultValue>
+      <defaultValue>['Commercial-University of Alaska', 'Commercial-Express Scripts National Preferred']</defaultValue>
       <description></description>
       <id>de654a76-8be5-472b-be0e-387af9358dfc</id>
       <masked>false</masked>

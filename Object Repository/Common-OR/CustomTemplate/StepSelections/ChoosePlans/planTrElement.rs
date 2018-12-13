@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectPlanType</name>
+   <name>planTrElement</name>
    <tag></tag>
-   <elementGuidId>ab15884a-f981-4f89-88fa-5ab9486feee3</elementGuidId>
+   <elementGuidId>0ea508e4-a9e8-4c41-aceb-f076fe27163f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='plan-display']//button[@type='button'][contains(text(),'${Variable}')]</value>
+         <value>//tbody//tr[@data-name='University of Alaska']//td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='plan-display']//button[@type='button'][contains(text(),'${Variable}')]</value>
+      <value>//tbody//tr[@data-name='University of Alaska']//td</value>
    </webElementProperties>
 </WebElementEntity>

@@ -16,16 +16,17 @@ if (payerName instanceof String ) {
 	payerName = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(payerName)
 }
 
-CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(payerName, false)
+CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(payerName, false, 'payer')
 
 if (planNames instanceof String ) {
 	planNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planNames)
 }
 
-CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planNames)
+List<String> planOrPayerNamesList = []
+planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planNames)
 
 CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, 
-    payerName, planNames)
+    planOrPayerNamesList)
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 
@@ -33,7 +34,7 @@ WebUI.delay(3)
 
 String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
 
-CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planNames)
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList)
 
 WebUI.delay(3)
 

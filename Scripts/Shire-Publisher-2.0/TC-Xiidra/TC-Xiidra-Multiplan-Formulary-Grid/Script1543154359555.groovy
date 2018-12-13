@@ -18,11 +18,13 @@ if (planOrPayerNames instanceof String ) {
 	planOrPayerNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planOrPayerNames)
 }
 
+List<String> planOrPayerNamesList = []
+
 if (planOrPayer == 'shire_plan') {
-	CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)
+	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)
 } else {
 	hasPlanOrPayer = CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.hasPlanOrPayerStep'()
-	CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer)
+	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer, planOrPayer)
 }
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
@@ -31,7 +33,7 @@ WebUI.delay(3)
 
 String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
 
-CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNames)
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList)
 
 WebUI.delay(3)
 

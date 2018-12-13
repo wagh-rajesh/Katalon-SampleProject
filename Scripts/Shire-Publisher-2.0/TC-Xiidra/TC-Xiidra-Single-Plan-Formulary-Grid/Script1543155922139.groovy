@@ -16,13 +16,15 @@ CustomKeywords.'com.helper.customtemplatehelper.CopaySelector.selectCopayOption'
 
 CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.selectPlanOrPayer'(planOrPayer)
 
+List<String> planOrPayerNamesList = []
+
 if (planOrPayer == 'shire_plan') {
-    CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerName)
+    planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerName)
 } else {
-    CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerName)
+    planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerName, hasPlanOrPayer, planOrPayer)
 }
 
-CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, planOrPayerName)
+CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, planOrPayerNamesList)
 
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 
@@ -30,7 +32,7 @@ WebUI.delay(3)
 
 String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
 
-CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerName)
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList)
 
 WebUI.delay(3)
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectPlanType</name>
+   <name>planThElements</name>
    <tag></tag>
-   <elementGuidId>ab15884a-f981-4f89-88fa-5ab9486feee3</elementGuidId>
+   <elementGuidId>4722900f-a2f9-491b-a753-03f22b1e5cc3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='plan-display']//button[@type='button'][contains(text(),'${Variable}')]</value>
+         <value>//table[@id='commercial-table']//th</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='plan-display']//button[@type='button'][contains(text(),'${Variable}')]</value>
+      <value>//table[@id='commercial-table']//th</value>
    </webElementProperties>
 </WebElementEntity>

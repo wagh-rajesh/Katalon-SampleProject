@@ -11,6 +11,8 @@ import internal.GlobalVariable
 
 public class PayerSelector {
 
+	public static PAYER_ROW_DATA = ['tierName': null, 'copay': null, 'lives': null, 'planType': null]
+
 	@Keyword
 	public void selectPayer(String payerName) {
 		if (!checkIfCollapsedOrExpand()) {

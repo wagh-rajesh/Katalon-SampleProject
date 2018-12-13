@@ -34,7 +34,7 @@
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['Premera Blue Cross 4-Tier', 'Premera Blue Cross 3-Tier']</defaultValue>
+      <defaultValue>['Commercial-Premera Blue Cross 4-Tier', 'Commercial-Premera Blue Cross 3-Tier']</defaultValue>
       <description></description>
       <id>238a3199-d310-4df3-8686-4a235efc88ec</id>
       <masked>false</masked>
