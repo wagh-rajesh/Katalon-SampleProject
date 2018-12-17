@@ -18,7 +18,7 @@ if (planOrPayerNames instanceof String ) {
 	planOrPayerNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planOrPayerNames)
 }
 
-List<String> planOrPayerNamesList = []
+def planOrPayerNamesList = []
 
 if (planOrPayer == 'shire_plan') {
 	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerNames)

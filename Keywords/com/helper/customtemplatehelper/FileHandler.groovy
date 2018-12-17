@@ -81,7 +81,7 @@ public class FileHandler {
 	}
 
 	@Keyword
-	public boolean verifyFileData(String pdfFilePath, List planNames) {
+	public boolean verifyFileData(String pdfFilePath, def planNames) {
 		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
 		println("Downloaded File Path ------------------> " + modifiedInputFilePath)
 		WebUI.delay(GlobalVariable.timeoutFiveSec)
@@ -94,9 +94,24 @@ public class FileHandler {
 		bis.close();
 		println("\n################## Downloaded PDF contents ##################\n")
 		println(pdfText)
-		for( String planName in planNames) {
+//		for( String planName in planNames) {
+//			if(pdfText.contains(planName)) {
+//				println(planName + " -> Present in PDF data")
+//			} else {
+//				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
+//			}
+//		}
+		planNames.each { planName, planData ->
 			if(pdfText.contains(planName)) {
 				println(planName + " -> Present in PDF data")
+				planData.each { columnData, columnValue ->
+					if (columnValue != null || columnValue.size() > 0) {
+						pdfText.contains(columnValue)
+						println(columnValue + " -> Present in PDF data")
+					} else {
+						KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
+					}
+				}
 			} else {
 				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
 			}

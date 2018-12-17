@@ -5,8 +5,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -26,8 +27,12 @@ import com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain
 import internal.GlobalVariable
 
 public class PlansSelector {
-	
-	public static PLAN_ROW_DATA = ['tierName': null, 'copay': null, 'lives': null, 'planType': null]
+
+	public static PLAN_ROW_DATA =  [:] // Sample Data : ['plan-type': null, 'lives': null, 'tier-name': null]
+	public static plansTableColumns = []
+	def plansRowData = [:]
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement Table = driver.findElement(By.xpath("//table/tbody"))
 
 	@Keyword
 	public void selectPlan(String planName) {
@@ -43,8 +48,8 @@ public class PlansSelector {
 	@Keyword
 	public List selectPlan(List planNames) {
 		List<String> planNamesList = []
-		def plansRowData = [:]
 		expandOrCollapsePlanSelectionStep()
+		fetchColumnHeader()
 		for(String planTypeAndName in planNames) {
 			def planTypeNameCombination = planTypeAndName.split('-')
 			String planType = planTypeNameCombination[0].trim()
@@ -55,11 +60,12 @@ public class PlansSelector {
 			WebUI.waitForElementPresent(planTestOject, GlobalVariable.timeoutTwentySec)
 			WebUI.click(planTestOject)
 			WebUI.delay(GlobalVariable.timeoutFiveSec)
-//			plansRowData[planName] = fetchRowData(planName)
+			fetchRowData(planName)
 		}
-		println("Generated payer name list ----------------> " + planNamesList)
+		println("Selected Row Data from PlansSelector ----------------> " + plansRowData)
 		expandOrCollapsePlanSelectionStep()
-		return planNamesList
+//		return planNamesList
+		return PLAN_ROW_DATA
 	}
 
 	public void expandOrCollapsePlanSelectionStep() {
@@ -69,7 +75,6 @@ public class PlansSelector {
 	}
 
 	public String selectPlanType(String planOrPayerType) {
-		println("planOrPayerType from selectPlanType -------------------------> " + planOrPayerType)
 		String testObjPath = 'Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/selectPlanType'
 		WebUI.waitForElementClickable(findTestObject(testObjPath, [('Variable'): planOrPayerType]), GlobalVariable.timeoutThirtySec)
 		WebUI.click(findTestObject(testObjPath, [('Variable'): planOrPayerType]))
@@ -77,21 +82,40 @@ public class PlansSelector {
 		String webEle = 'select' + planOrPayerType + 'Plan'
 		return webEle;
 	}
-	
+
 	public void fetchRowData(String planName) {
 		// Based on plan names as key, separate hash with all row data in key-value format will be stored in Hash
-		List tdElements = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/planTrElement', [('Variable'): planName]), GlobalVariable.timeoutTwentySec) 
-		println("tdElements -----------------> " + tdElements)
-		'To locate table'
-		WebElement Table = driver.findElement(By.xpath("//table/tbody"))
-		'To locate rows of table it will Capture all the rows available in the table'
-		List<WebElement> rows_table = Table.findElements(By.xpath("tr[@data-name='" + planName + "']"))
-		'To calculate no of rows In table'
-		int rows_count = rows_table.size()
-		'Loop will execute for all the rows of the table'
-		'To locate columns(cells) of that specific row'
-		int row = 0
-		List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
-		println("Column values -----------------> " + Columns_row)
+		List<WebElement> tableRows = Table.findElements(By.xpath("tr[@data-name='" + planName + "']"))
+		List<WebElement> selectedRow = tableRows.get(0).findElements(By.tagName('td'))
+		for (int j = 0; j < selectedRow.size(); j++) {
+			for (def columnName in plansTableColumns) {
+				PLAN_ROW_DATA[columnName] = selectedRow.get(plansTableColumns.indexOf(columnName)).getText();
+			}
+		}
+		println("PLAN_ROW_DATA for + " + planName + " : -> " + PLAN_ROW_DATA)
+		plansRowData[planName] = PLAN_ROW_DATA
+	}
+
+	public void fetchColumnHeader() {
+		List<WebElement> headerRow = Table.findElements(By.xpath("//tr//th[@class='sorting']"))
+		for (int j = 0; j < headerRow.size(); j++) {
+			def columnHeader = headerRow.get(j).getText().trim()
+			def tempkey = columnHeader.toLowerCase().split(' ').join('-')
+
+			def drugList = [
+				'xiidra',
+				'vyvanse',
+				'mydayis'
+			]
+
+			if (drugList.contains(tempkey)) {
+				tempkey = 'status'
+			}
+
+			if (columnHeader.size() > 0) {
+				plansTableColumns.add(tempkey)
+				PLAN_ROW_DATA[tempkey] = null
+			}
+		}
 	}
 }

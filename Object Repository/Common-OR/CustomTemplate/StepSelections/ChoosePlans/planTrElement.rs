@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//tbody//tr[@data-name='University of Alaska']//td</value>
+         <value>//tbody//tr[@data-name='{Variable}']//td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//tbody//tr[@data-name='University of Alaska']//td</value>
+      <value>//tbody//tr[@data-name='{Variable}']//td</value>
    </webElementProperties>
 </WebElementEntity>
