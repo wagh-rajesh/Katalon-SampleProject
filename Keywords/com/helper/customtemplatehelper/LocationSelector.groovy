@@ -26,6 +26,8 @@ public class LocationSelector {
 	 *  2.	metro_stat_areas, etc
 	 */
 
+
+	// National selection
 	@Keyword
 	public void selectLocation(String locationType, Integer waitTimeout) {
 		expandOrCollapseLocationStep()
@@ -33,6 +35,7 @@ public class LocationSelector {
 		expandOrCollapseLocationStep()
 	}
 
+	// State selection
 	@Keyword
 	public void selectLocation(String locationType, String stateName, Integer waitTimeout) {
 		expandOrCollapseLocationStep()
@@ -41,11 +44,16 @@ public class LocationSelector {
 		expandOrCollapseLocationStep()
 	}
 
+	// MSA selection
 	@Keyword
 	public void selectLocation(String locationType, String stateName, String msaName, Integer waitTimeout) {
-		selectLocation(locationType, stateName, GlobalVariable.timeoutTwoSec)
-		selectMsa(msaName)
-		WebUI.delay(1)
+		expandOrCollapseLocationStep()
+		selectLocationType(locationType)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectStateForMsa', [('Variable'): locationName]))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectMSA', [('Variable'): msaName]))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		expandOrCollapseLocationStep()
 	}
 
 	public void expandOrCollapseLocationStep() {
@@ -55,23 +63,20 @@ public class LocationSelector {
 	}
 
 	public void selectLocationType(String locationType) {
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectLocationDropdown'))
-		WebUI.delay(1)
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectStateOrMsa', [('Variable'): locationType]))
-		WebUI.delay(1)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectLocationLink', [('Variable'): locationType]))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
 	}
 
 	public void selectState(String locationName, Integer waitTime=1) {
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/stateDropdown'))
-		WebUI.delay(1)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectState', [('Variable'): locationName]), GlobalVariable.timeoutTwentySec)
 		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectState', [('Variable'): locationName]))
-		WebUI.delay(waitTime)
+		WebUI.delay(GlobalVariable.timeoutThirtySec)
 	}
 
-	public void selectMsa(String msaName) {
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/msaDropDown'))
-		WebUI.delay(1)
-		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectMsa', [('Variable'): msaName]))
-		WebUI.delay(GlobalVariable.timeoutTwentySec)
+	public void selectMsa(String locationName, String msaName) {
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectStateForMsa', [('Variable'): locationName]))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/Location/selectMSA', [('Variable'): msaName]))
+		WebUI.delay(GlobalVariable.timeoutThirtySec)
 	}
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description>Clicks on &quot;Please select: text from state dropdown</description>
-   <name>selectLocationDropdown</name>
+   <description></description>
+   <name>SelectMSA</name>
    <tag></tag>
-   <elementGuidId>51f6cd27-6a8a-4ac7-8a57-8deb94bd2980</elementGuidId>
+   <elementGuidId>069d9202-67bc-4102-94a9-d1f96a060595</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='dropdown locations']</value>
+         <value>//ul[@id='twotier-selections']//li//input[@data-value='${Variable}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='dropdown locations']</value>
+      <value>//ul[@id='twotier-selections']//li//input[@data-value='${Variable}']</value>
    </webElementProperties>
 </WebElementEntity>

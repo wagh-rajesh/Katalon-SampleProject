@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectMsa</name>
+   <name>SelectMSA</name>
    <tag></tag>
-   <elementGuidId>1572ecfb-4994-4c93-bb43-67aec6190d9b</elementGuidId>
+   <elementGuidId>069d9202-67bc-4102-94a9-d1f96a060595</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'${Variable}')]</value>
+         <value>//ul[@id='twotier-selections']//li//input[@data-value='${Variable}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'${Variable}')]</value>
+      <value>//ul[@id='twotier-selections']//li//input[@data-value='${Variable}']</value>
    </webElementProperties>
 </WebElementEntity>
