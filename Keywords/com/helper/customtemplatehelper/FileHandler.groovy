@@ -94,13 +94,13 @@ public class FileHandler {
 		bis.close();
 		println("\n################## Downloaded PDF contents ##################\n")
 		println(pdfText)
-//		for( String planName in planNames) {
-//			if(pdfText.contains(planName)) {
-//				println(planName + " -> Present in PDF data")
-//			} else {
-//				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
-//			}
-//		}
+		//		for( String planName in planNames) {
+		//			if(pdfText.contains(planName)) {
+		//				println(planName + " -> Present in PDF data")
+		//			} else {
+		//				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
+		//			}
+		//		}
 		planNames.each { planName, planData ->
 			if(pdfText.contains(planName)) {
 				println(planName + " -> Present in PDF data")
