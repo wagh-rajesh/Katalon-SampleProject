@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>msaDropDown</name>
+   <description>Clicks on &quot;Please select: text from state dropdown</description>
+   <name>selectLocationLink</name>
    <tag></tag>
-   <elementGuidId>35c68fd3-66bd-40fe-9dad-4e274f94b559</elementGuidId>
+   <elementGuidId>51f6cd27-6a8a-4ac7-8a57-8deb94bd2980</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='dropdown metro_stat_areas']//button[@type='button']</value>
+         <value>//a[contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='dropdown metro_stat_areas']//button[@type='button']</value>
+      <value>//a[contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>

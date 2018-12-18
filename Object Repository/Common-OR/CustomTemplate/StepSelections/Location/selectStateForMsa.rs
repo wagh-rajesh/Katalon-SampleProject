@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectState</name>
+   <name>selectStateForMsa</name>
    <tag></tag>
-   <elementGuidId>8108f051-1a30-47d3-8aef-138a9700fd49</elementGuidId>
+   <elementGuidId>1572ecfb-4994-4c93-bb43-67aec6190d9b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//ul[@id='geo-states']//li//label[contains(text(),'${Variable}')]</value>
+         <value>//ul[@id='twotier-selector']//li//a[@href='#'][contains(text(),'${Variable}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//ul[@id='geo-states']//li//label[contains(text(),'${Variable}')]</value>
+      <value>//ul[@id='twotier-selector']//li//a[@href='#'][contains(text(),'${Variable}')]</value>
    </webElementProperties>
 </WebElementEntity>
