@@ -84,11 +84,8 @@ public class PlansSelector {
 
 	public void fetchRowData(String planName) {
 		// Based on plan names as key, separate hash with all row data in key-value format will be stored in Hash
-		List<WebElement> tableRows = Table.findElements(By.xpath("//tr[@data-name='" + planName + "']"))
-		println("fetchRowData :: planName : ---------------> " + planName)
-		println("fetchRowData :: tableRows : ------------> " + tableRows)
+		List<WebElement> tableRows = Table.findElements(By.xpath("//tr[contains(@data-name, '" + planName.trim() + "')]"))
 		List<WebElement> selectedRow = tableRows.get(0).findElements(By.tagName('td'))
-		println("fetchRowData :: selectedRow : ------------> " + selectedRow)
 		for (int j = 0; j < selectedRow.size(); j++) {
 			for (def columnName in plansTableColumns) {
 				PLAN_ROW_DATA[columnName] = selectedRow.get(plansTableColumns.indexOf(columnName)).getText();
@@ -99,7 +96,7 @@ public class PlansSelector {
 	}
 
 	public void fetchColumnHeader() {
-		List<WebElement> headerRow = Table.findElements(By.xpath("//tr//th[@class='sorting']"))
+		List<WebElement> headerRow = Table.findElements(By.xpath("//tr//th[contains(@class,'sorting')]"))
 		for (int j = 0; j < headerRow.size(); j++) {
 			def columnHeader = headerRow.get(j).getText().trim()
 			def tempkey = columnHeader.toLowerCase().split(' ').join('-')

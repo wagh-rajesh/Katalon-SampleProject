@@ -94,17 +94,18 @@ public class FileHandler {
 		bis.close();
 		println("\n################## Downloaded PDF contents ##################\n")
 		println(pdfText)
+		println("\n################## End of PDF Contents ######################\n")
 		// Pass all PDF column data to verify here
-		println("verifyFileData :: Data to verify : -----------------> " + plansRowData)
+		println("\n\n\nData to be verified from UI based on rows selected : -----------------> \n" + plansRowData + "\n\n\n")
 		plansRowData.each { planName, planData ->
 			if(pdfText.contains(planName)) {
 				println(planName + " -----------------> Present in PDF data")
 				for (String pdfCol in pdfColumnData) {
-					println("Checking " + pdfCol + " present in PDF Data")
+					println("Checking '" + pdfCol + "' present in PDF Data")
 					if (planData != null || planData.size() > 0) {
-						def valueToVerfiy = planData.find{ it.key == pdfCol}?.value
-						pdfText.contains(valueToVerfiy)
-						println(valueToVerfiy + " -> Present in PDF data")
+						def valueToVerfiy = planData.find{ it.key == pdfCol }?.value
+						pdfText.contains(valueToVerfiy.trim())
+						println(valueToVerfiy + " --------------> Present in PDF data")
 					} else {
 						KeywordUtil.markWarning("[Error] : '" + valueToVerfiy + "' Not present in PDF.")
 					}
@@ -113,6 +114,6 @@ public class FileHandler {
 				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
 			}
 		}
-		println("\n################## End of PDF Contents ######################\n")
+		println("\n\n\n################## End of verifications contents ######################\n\n\n")
 	}
 }

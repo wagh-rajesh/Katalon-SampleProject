@@ -48,7 +48,7 @@
       <name>sellSheetName</name>
    </variable>
    <variable>
-      <defaultValue>['plan-type', 'plan-name']</defaultValue>
+      <defaultValue>['plan-type', 'plan-name', 'status']</defaultValue>
       <description></description>
       <id>febf46d7-9873-4827-850a-293051eced8d</id>
       <masked>false</masked>

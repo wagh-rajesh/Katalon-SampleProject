@@ -41,14 +41,14 @@
       <name>payerName</name>
    </variable>
    <variable>
-      <defaultValue>['Commercial--Premera Blue Cross Marketplace Bronze (AK)', 'Commercial--Premera Blue Cross Marketplace Silver (AK)\n']</defaultValue>
+      <defaultValue>['Commercial--Premera Blue Cross Marketplace Bronze (AK)', 'Commercial--Premera Blue Cross Marketplace Silver (AK)']</defaultValue>
       <description></description>
       <id>9271f3f3-80fa-4b74-af8d-93a15678820d</id>
       <masked>false</masked>
       <name>planNames</name>
    </variable>
    <variable>
-      <defaultValue>['plan-name', 'plan-type']</defaultValue>
+      <defaultValue>['plan-name', 'plan-type', 'status']</defaultValue>
       <description></description>
       <id>64ddc963-d22b-4efd-9cee-25fab68a681e</id>
       <masked>false</masked>

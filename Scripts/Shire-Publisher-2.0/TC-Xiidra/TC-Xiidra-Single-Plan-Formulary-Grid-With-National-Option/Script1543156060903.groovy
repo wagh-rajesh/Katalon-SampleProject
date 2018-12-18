@@ -16,6 +16,10 @@ CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.selectPlanOr
 
 def planOrPayerNamesList = [:]
 
+if (locationType == 'National') {
+	WebUI.delay(GlobalVariable.timeoutThirtySec)
+}
+
 if (planOrPayer == 'shire_plan') {
 	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerName)
 } else {

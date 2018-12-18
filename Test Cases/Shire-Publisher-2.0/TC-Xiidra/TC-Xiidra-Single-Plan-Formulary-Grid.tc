@@ -34,7 +34,7 @@
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['Commercial--CVS Caremark Advanced Control Specialty']</defaultValue>
+      <defaultValue>['Commercial--Federal Employee Program Basic']</defaultValue>
       <description></description>
       <id>f835d8f7-ed5a-43ef-8202-d9b507f7fcc5</id>
       <masked>false</masked>
@@ -48,7 +48,7 @@
       <name>sellSheetName</name>
    </variable>
    <variable>
-      <defaultValue>['plan-type', 'plan-name']</defaultValue>
+      <defaultValue>['plan-name', 'status', 'copay']</defaultValue>
       <description></description>
       <id>37f369ba-1867-4cef-a320-3d5a0b2d7d2f</id>
       <masked>false</masked>
