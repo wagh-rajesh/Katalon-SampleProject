@@ -23,7 +23,7 @@ public class CriteriaVerifier {
 
 
 	@Keyword
-	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPlansNames) {
+	public void verifyCriteria(String templateName, String locationName, String sellSheetName, LinkedHashMap selectedPlansNames) {
 		verifyTemplateName(templateName)
 		WebUI.delay(GlobalVariable.timeoutOneSec)
 		verifyLocation(locationName)
@@ -37,7 +37,7 @@ public class CriteriaVerifier {
 	}
 
 	@Keyword
-	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPayerNames, List selectedPlansNames) {
+	public void verifyCriteria(String templateName, String locationName, String sellSheetName, List selectedPayerNames, LinkedHashMap selectedPlansNames) {
 		verifyCriteria(templateName, locationName, sellSheetName, selectedPlansNames)
 		verifyPayers(selectedPayerNames)
 		WebUI.delay(GlobalVariable.timeoutOneSec)
@@ -52,8 +52,9 @@ public class CriteriaVerifier {
 		WebUI.verifyElementText(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/Location'), locationName, FailureHandling.STOP_ON_FAILURE)
 	}
 
-	public void verifyPlans(List plansList) {
-		for(String planName in plansList) {
+	public void verifyPlans(LinkedHashMap plansList) {
+		plansList.each{ planName, planData -> 
+			//for(String planName in planNames) {
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/CriteriaSelections/PlansSelections/AllPlans', [('Variable'): planName]))
 		}
 	}
