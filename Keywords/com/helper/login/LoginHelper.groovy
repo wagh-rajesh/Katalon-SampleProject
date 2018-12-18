@@ -68,8 +68,8 @@ class LoginHelper {
 
 	@Keyword
 	public void logoutApplication() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/a_Shire FF Admin'), GlobalVariable.timeoutTwentySec)
-		WebUI.click(findTestObject('Object Repository/PO-Login/a_Shire FF Admin'))
+		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/a_Shire FF Admin', [('Variable'): GlobalVariable.shireUser]), GlobalVariable.timeoutTwentySec)
+		WebUI.click(findTestObject('Object Repository/PO-Login/a_Shire FF Admin', [('Variable'): GlobalVariable.shireUser]))
 		WebUI.delay(GlobalVariable.timeoutTwoSec)
 		WebUI.click(findTestObject('Object Repository/PO-Login/a_Logout'))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PO-Login/input_The username password or'), GlobalVariable.timeoutTwentySec)
