@@ -47,4 +47,11 @@
       <masked>false</masked>
       <name>planNames</name>
    </variable>
+   <variable>
+      <defaultValue>['plan-name', 'plan-type']</defaultValue>
+      <description></description>
+      <id>64ddc963-d22b-4efd-9cee-25fab68a681e</id>
+      <masked>false</masked>
+      <name>pdfDataColumns</name>
+   </variable>
 </TestCaseEntity>

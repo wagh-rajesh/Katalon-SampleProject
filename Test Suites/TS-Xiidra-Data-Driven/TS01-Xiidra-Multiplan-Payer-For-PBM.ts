@@ -61,5 +61,11 @@
          <value>locationType</value>
          <variableId>a2006a21-fd33-4043-a658-21f086c06c03</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>64ddc963-d22b-4efd-9cee-25fab68a681e</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

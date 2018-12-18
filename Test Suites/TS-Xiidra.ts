@@ -52,6 +52,12 @@
          <value></value>
          <variableId>a2006a21-fd33-4043-a658-21f086c06c03</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>64ddc963-d22b-4efd-9cee-25fab68a681e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>2125306b-d6ce-4c86-8ea6-05d527a91884</guid>
@@ -148,6 +154,12 @@
          <value></value>
          <variableId>3cf4a75e-4ea5-48e6-a9db-f33ae55c24c1</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5de1b055-b201-48d2-838e-4262bd558ea9</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>332314fa-2479-4bcd-a2f3-fb9174c20b84</guid>
@@ -189,6 +201,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>15b2e8f5-dbef-463b-b40e-9affd1b4ece4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>37f369ba-1867-4cef-a320-3d5a0b2d7d2f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -232,6 +250,12 @@
          <value></value>
          <variableId>ef05bd45-d619-4542-aee0-02b6b75ff768</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>febf46d7-9873-4827-850a-293051eced8d</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>62bc7bb8-2ad5-4a34-87ab-15fa0de48d25</guid>
@@ -273,6 +297,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>15d79f74-0651-481b-b60c-80c16516fe33</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8fdb7607-74a7-44df-bbf3-777712090fd4</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -14,7 +14,7 @@ CustomKeywords.'com.helper.customtemplatehelper.LocationSelector.selectLocation'
 
 CustomKeywords.'com.helper.customtemplatehelper.PlanOrPayerSelector.selectPlanOrPayer'(planOrPayer)
 
-List<String> planOrPayerNamesList = []
+def planOrPayerNamesList = [:]
 
 if (planOrPayer == 'shire_plan') {
 	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planOrPayerName)
@@ -30,7 +30,7 @@ WebUI.delay(3)
 
 String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
 
-CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList)
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList, pdfDataColumns)
 
 WebUI.delay(3)
 

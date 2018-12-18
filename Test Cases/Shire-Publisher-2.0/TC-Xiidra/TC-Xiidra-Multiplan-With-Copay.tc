@@ -47,4 +47,11 @@
       <masked>false</masked>
       <name>sellSheetName</name>
    </variable>
+   <variable>
+      <defaultValue>['plan-type', 'plan-name']</defaultValue>
+      <description></description>
+      <id>8fdb7607-74a7-44df-bbf3-777712090fd4</id>
+      <masked>false</masked>
+      <name>pdfDataColumns</name>
+   </variable>
 </TestCaseEntity>

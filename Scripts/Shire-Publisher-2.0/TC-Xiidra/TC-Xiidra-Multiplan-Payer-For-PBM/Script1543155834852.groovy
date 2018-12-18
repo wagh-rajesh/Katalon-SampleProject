@@ -22,7 +22,7 @@ if (planNames instanceof String ) {
 	planNames = CustomKeywords.'com.helper.customtemplatehelper.DataFormatter.formatData'(planNames)
 }
 
-List<String> planOrPayerNamesList = []
+def planOrPayerNamesList = [:]
 planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PlansSelector.selectPlan'(planNames)
 
 CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, 
@@ -34,7 +34,7 @@ WebUI.delay(3)
 
 String downloadedFile = CustomKeywords.'com.helper.customtemplatehelper.FileHandler.isFileDownloaded'(templateName, locationName)
 
-CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList)
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(downloadedFile, planOrPayerNamesList, pdfDataColumns)
 
 WebUI.delay(3)
 
