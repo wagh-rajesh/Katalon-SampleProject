@@ -41,7 +41,7 @@
       <name>payerName</name>
    </variable>
    <variable>
-      <defaultValue>['Commercial-Premera Blue Cross 4-Tier', 'Commercial-Premera Blue Cross 3-Tier']</defaultValue>
+      <defaultValue>['Commercial--Premera Blue Cross Marketplace Bronze (AK)', 'Commercial--Premera Blue Cross Marketplace Silver (AK)\n']</defaultValue>
       <description></description>
       <id>9271f3f3-80fa-4b74-af8d-93a15678820d</id>
       <masked>false</masked>

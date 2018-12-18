@@ -55,5 +55,11 @@
          <value>planOrPayerNames</value>
          <variableId>5eb40b89-516d-4dd9-b5f1-ccffbb8a6d8e</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>15d79f74-0651-481b-b60c-80c16516fe33</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

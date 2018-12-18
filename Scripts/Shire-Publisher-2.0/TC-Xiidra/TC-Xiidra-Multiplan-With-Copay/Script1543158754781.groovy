@@ -27,6 +27,8 @@ if (planOrPayer == 'shire_plan') {
 	planOrPayerNamesList = CustomKeywords.'com.helper.customtemplatehelper.PayerSelector.selectPayer'(planOrPayerNames, hasPlanOrPayer, planOrPayer)
 }
 
+CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyCriteria'(templateName, locationName, sellSheetName, planOrPayerNamesList)
+
 CustomKeywords.'com.helper.customtemplatehelper.CustomTemplate.clickViewPdf'()
 
 WebUI.delay(3)

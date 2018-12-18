@@ -34,7 +34,7 @@
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['Commercial-Premera Blue Cross 4-Tier', 'Commercial-Premera Blue Cross 3-Tier']</defaultValue>
+      <defaultValue>['Commercial--Premera Blue Cross 4-Tier', 'Commercial--Premera Blue Cross 3-Tier']</defaultValue>
       <description></description>
       <id>238a3199-d310-4df3-8686-4a235efc88ec</id>
       <masked>false</masked>
@@ -46,5 +46,19 @@
       <id>23bda59d-8884-473c-8ef6-b0d334d0191b</id>
       <masked>false</masked>
       <name>loadPlansBasedOnPayer</name>
+   </variable>
+   <variable>
+      <defaultValue>'Xiidra Multiplan Formulary Grid'</defaultValue>
+      <description></description>
+      <id>77c79623-8bf9-4fac-9108-dc76d0d39751</id>
+      <masked>false</masked>
+      <name>sellSheetName</name>
+   </variable>
+   <variable>
+      <defaultValue>['plan-name', 'plan-type']</defaultValue>
+      <description></description>
+      <id>0197e396-2e78-4332-b2e9-83c947574d12</id>
+      <masked>false</masked>
+      <name>pdfDataColumns</name>
    </variable>
 </TestCaseEntity>

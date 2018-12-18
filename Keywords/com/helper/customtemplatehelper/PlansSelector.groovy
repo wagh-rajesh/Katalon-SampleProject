@@ -46,14 +46,14 @@ public class PlansSelector {
 	}
 
 	@Keyword
-	public List selectPlan(List planNames) {
+	public LinkedHashMap selectPlan(List planNames) {
 		List<String> planNamesList = []
 		expandOrCollapsePlanSelectionStep()
 		fetchColumnHeader()
 		for(String planTypeAndName in planNames) {
-			def planTypeNameCombination = planTypeAndName.split('-')
+			def planTypeNameCombination = planTypeAndName.split('--')
 			String planType = planTypeNameCombination[0].trim()
-			String planName = planTypeNameCombination[1].trim()
+			String planName = planTypeNameCombination[1]
 			planNamesList.add(planName)
 			String webEleName = selectPlanType(planType.capitalize())
 			TestObject planTestOject = findTestObject('Object Repository/Common-OR/CustomTemplate/StepSelections/ChoosePlans/' + webEleName , [('Variable'): planName])
@@ -64,8 +64,7 @@ public class PlansSelector {
 		}
 		println("Selected Row Data from PlansSelector ----------------> " + plansRowData)
 		expandOrCollapsePlanSelectionStep()
-//		return planNamesList
-		return PLAN_ROW_DATA
+		return plansRowData
 	}
 
 	public void expandOrCollapsePlanSelectionStep() {
@@ -85,8 +84,11 @@ public class PlansSelector {
 
 	public void fetchRowData(String planName) {
 		// Based on plan names as key, separate hash with all row data in key-value format will be stored in Hash
-		List<WebElement> tableRows = Table.findElements(By.xpath("tr[@data-name='" + planName + "']"))
+		List<WebElement> tableRows = Table.findElements(By.xpath("//tr[@data-name='" + planName + "']"))
+		println("fetchRowData :: planName : ---------------> " + planName)
+		println("fetchRowData :: tableRows : ------------> " + tableRows)
 		List<WebElement> selectedRow = tableRows.get(0).findElements(By.tagName('td'))
+		println("fetchRowData :: selectedRow : ------------> " + selectedRow)
 		for (int j = 0; j < selectedRow.size(); j++) {
 			for (def columnName in plansTableColumns) {
 				PLAN_ROW_DATA[columnName] = selectedRow.get(plansTableColumns.indexOf(columnName)).getText();
@@ -117,5 +119,6 @@ public class PlansSelector {
 				PLAN_ROW_DATA[tempkey] = null
 			}
 		}
+		println("Plan Table Header columns : ----------------> " + PLAN_ROW_DATA)
 	}
 }

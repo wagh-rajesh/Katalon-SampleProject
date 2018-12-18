@@ -8,36 +8,43 @@
    <variable>
       <defaultValue>'Xiidra Multiplan with status'</defaultValue>
       <description></description>
-      <id>443d9544-a056-4e18-97e7-2d60727fc0a2</id>
+      <id>1e310095-21a2-407d-8596-fd0f99cf7142</id>
       <masked>false</masked>
       <name>templateName</name>
    </variable>
    <variable>
       <defaultValue>'State'</defaultValue>
       <description></description>
-      <id>70598a9d-6772-48de-be3b-5caebf345f4c</id>
+      <id>560fc483-d50c-47d9-a00c-1837812a79e3</id>
       <masked>false</masked>
       <name>locationType</name>
    </variable>
    <variable>
       <defaultValue>'Alaska'</defaultValue>
       <description></description>
-      <id>db6ea410-9242-42ec-b25d-88d3bc3536c8</id>
+      <id>10681d2e-1512-453c-94b9-9d4e065e2da9</id>
       <masked>false</masked>
       <name>locationName</name>
    </variable>
    <variable>
       <defaultValue>'shire_plan'</defaultValue>
       <description></description>
-      <id>ce6cc6ec-b809-4147-8d11-35dc741ee652</id>
+      <id>419412da-5fc3-4914-b9ce-2c776cf2fbe3</id>
       <masked>false</masked>
       <name>planOrPayer</name>
    </variable>
    <variable>
-      <defaultValue>['Commercial-University of Alaska', 'Commercial-Express Scripts National Preferred']</defaultValue>
+      <defaultValue>['Commercial--University of Alaska', 'Commercial--Express Scripts National Preferred']</defaultValue>
       <description></description>
-      <id>de654a76-8be5-472b-be0e-387af9358dfc</id>
+      <id>191f946c-d1e8-40b3-b5ae-61e40a1d36fe</id>
       <masked>false</masked>
       <name>planOrPayerNames</name>
+   </variable>
+   <variable>
+      <defaultValue>'Xiidra Multiplan with status'</defaultValue>
+      <description></description>
+      <id>ef05bd45-d619-4542-aee0-02b6b75ff768</id>
+      <masked>false</masked>
+      <name>sellSheetName</name>
    </variable>
 </TestCaseEntity>

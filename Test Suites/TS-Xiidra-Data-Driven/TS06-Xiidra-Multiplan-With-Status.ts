@@ -29,31 +29,37 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>443d9544-a056-4e18-97e7-2d60727fc0a2</variableId>
+         <variableId>1e310095-21a2-407d-8596-fd0f99cf7142</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>locationType</value>
-         <variableId>70598a9d-6772-48de-be3b-5caebf345f4c</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>560fc483-d50c-47d9-a00c-1837812a79e3</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>locationName</value>
-         <variableId>db6ea410-9242-42ec-b25d-88d3bc3536c8</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>10681d2e-1512-453c-94b9-9d4e065e2da9</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>planOrPayer</value>
-         <variableId>ce6cc6ec-b809-4147-8d11-35dc741ee652</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>419412da-5fc3-4914-b9ce-2c776cf2fbe3</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>2ba70915-033d-4b97-813e-ad5e4a173155</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>planOrPayerNames</value>
-         <variableId>de654a76-8be5-472b-be0e-387af9358dfc</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>191f946c-d1e8-40b3-b5ae-61e40a1d36fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef05bd45-d619-4542-aee0-02b6b75ff768</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
