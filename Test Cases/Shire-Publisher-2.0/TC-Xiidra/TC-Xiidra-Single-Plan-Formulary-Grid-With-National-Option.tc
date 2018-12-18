@@ -13,7 +13,7 @@
       <name>templateName</name>
    </variable>
    <variable>
-      <defaultValue>'national'</defaultValue>
+      <defaultValue>'National'</defaultValue>
       <description></description>
       <id>69578723-80ec-4847-b1aa-3e4bbe8f303e</id>
       <masked>false</masked>

@@ -13,7 +13,7 @@
       <name>templateName</name>
    </variable>
    <variable>
-      <defaultValue>'states'</defaultValue>
+      <defaultValue>'State'</defaultValue>
       <description></description>
       <id>2c31321b-edb1-494a-a7ef-c44ea2deac5c</id>
       <masked>false</masked>
