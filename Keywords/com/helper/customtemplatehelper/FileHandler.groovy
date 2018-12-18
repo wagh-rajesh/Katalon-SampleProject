@@ -81,7 +81,7 @@ public class FileHandler {
 	}
 
 	@Keyword
-	public boolean verifyFileData(String pdfFilePath, def planNames) {
+	public boolean verifyFileData(String pdfFilePath, def plansRowData, List pdfColumnData) {
 		String modifiedInputFilePath = 'file:' + pdfFilePath.replaceAll('/', '///')
 		println("Downloaded File Path ------------------> " + modifiedInputFilePath)
 		WebUI.delay(GlobalVariable.timeoutFiveSec)
@@ -94,22 +94,19 @@ public class FileHandler {
 		bis.close();
 		println("\n################## Downloaded PDF contents ##################\n")
 		println(pdfText)
-		//		for( String planName in planNames) {
-		//			if(pdfText.contains(planName)) {
-		//				println(planName + " -> Present in PDF data")
-		//			} else {
-		//				KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
-		//			}
-		//		}
-		planNames.each { planName, planData ->
+		// Pass all PDF column data to verify here
+		println("verifyFileData :: Data to verify : -----------------> " + plansRowData)
+		plansRowData.each { planName, planData ->
 			if(pdfText.contains(planName)) {
-				println(planName + " -> Present in PDF data")
-				planData.each { columnData, columnValue ->
-					if (columnValue != null || columnValue.size() > 0) {
-						pdfText.contains(columnValue)
-						println(columnValue + " -> Present in PDF data")
+				println(planName + " -----------------> Present in PDF data")
+				for (String pdfCol in pdfColumnData) {
+					println("Checking " + pdfCol + " present in PDF Data")
+					if (planData != null || planData.size() > 0) {
+						def valueToVerfiy = planData.find{ it.key == pdfCol}?.value
+						pdfText.contains(valueToVerfiy)
+						println(valueToVerfiy + " -> Present in PDF data")
 					} else {
-						KeywordUtil.markFailedAndStop("[Error] : '" + planName + "' Not present in PDF.")
+						KeywordUtil.markWarning("[Error] : '" + valueToVerfiy + "' Not present in PDF.")
 					}
 				}
 			} else {
