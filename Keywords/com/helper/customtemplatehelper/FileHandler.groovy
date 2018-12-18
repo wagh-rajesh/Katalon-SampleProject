@@ -116,4 +116,14 @@ public class FileHandler {
 		}
 		println("\n\n\n################## End of verifications contents ######################\n\n\n")
 	}
+	
+	@Keyword
+	public boolean deleteDownloadedFile(String pdfFileName) {
+		println("\n\n################## Deleting File ##################\n\n")
+		println("File Name : ----------> " + pdfFileName)
+		def downloadedFile = new File(pdfFileName)
+		downloadedFile.delete();
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		println("\n\n################## End - Delete File ##################\n\n")
+	}
 }

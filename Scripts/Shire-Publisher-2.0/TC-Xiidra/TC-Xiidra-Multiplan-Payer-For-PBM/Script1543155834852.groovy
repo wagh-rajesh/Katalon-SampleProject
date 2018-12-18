@@ -38,6 +38,8 @@ CustomKeywords.'com.helper.customtemplatehelper.FileHandler.verifyFileData'(down
 
 WebUI.delay(3)
 
+CustomKeywords.'com.helper.customtemplatehelper.FileHandler.deleteDownloadedFile'(downloadedFile)
+
 CustomKeywords.'com.helper.customtemplatehelper.CriteriaVerifier.verifyOrderPDFBtn'()
 
 CustomKeywords.'com.helper.login.LoginHelper.logoutApplication'()
