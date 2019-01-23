@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>CDA-8787</description>
+   <name>TC-Vyvanse-State-Medicaid-Single-Plan-Flashcard</name>
+   <tag>Vyvanse</tag>
+   <comment></comment>
+   <testCaseGuid>a405c529-caea-45cc-9cdc-814b616c0c60</testCaseGuid>
+   <variable>
+      <defaultValue>'Vyvanse State Medicaid Single Plan Flashcard'</defaultValue>
+      <description></description>
+      <id>7fc4922e-dfa7-475b-a52b-e3b631f33d10</id>
+      <masked>false</masked>
+      <name>templateName</name>
+   </variable>
+   <variable>
+      <defaultValue>'VYVSTMEDSINGPLFLSHCRD'</defaultValue>
+      <description></description>
+      <id>7bc3a4e1-66fe-4957-9e70-0f4741005ff4</id>
+      <masked>false</masked>
+      <name>templateShortName</name>
+   </variable>
+</TestCaseEntity>

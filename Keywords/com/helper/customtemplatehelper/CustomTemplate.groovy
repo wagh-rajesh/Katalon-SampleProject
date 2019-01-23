@@ -60,4 +60,39 @@ public class CustomTemplate {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Common-OR/CustomTemplate/AllPdfButtons/button_orderPDF'), GlobalVariable.timeoutTwentySec)
 		WebUI.delay(GlobalVariable.timeoutTenSec)
 	}
+
+	@Keyword
+	public void verifyTemplatePreviewImg(String shortName) {
+		boolean isPreviewImgPresent = WebUI.waitForElementPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/TemplatePreviewImg', [('Variable'):shortName]), GlobalVariable.timeoutTwentySec)
+		if(isPreviewImgPresent) {
+			println("Preview Image with " + shortName + " is present")
+		} else {
+			KeywordUtil.markWarning("Warning :: Preview image not matching with Template ShortName")
+		}
+	}
+
+	@Keyword
+	public void verifyStepCompletion(String stepName) {
+		boolean isStepCompleted = WebUI.waitForElementPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/StepCompletion', [('Variable'):stepName]), GlobalVariable.timeoutTwentySec)
+		if(isStepCompleted) {
+			println("Step Completed for " + stepName)
+		} else {
+			KeywordUtil.markWarning("Warning :: Step completion mark is present")
+		}
+	}
+
+	@Keyword
+	public void verifyAvailableBrands(List brands) {
+		WebUI.waitForPageLoad(GlobalVariable.timeoutTwentySec)
+		WebUI.click(findTestObject('Object Repository/Common-OR/CustomTemplate/AllBrand'))
+		WebUI.delay(GlobalVariable.timeoutTwoSec)
+		for(String brandName in brands) {
+			boolean isBrandPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Common-OR/CustomTemplate/SelectBrand', [('Variable'):brandName]), GlobalVariable.timeoutTenSec )
+			if( isBrandPresent ){
+				println( brandName + " is present in available list of brands.")
+			} else {
+				KeywordUtil.markWarning("Warning :: " + brandName + " is not present in Available brand list.")
+			}
+		}
+	}
 }

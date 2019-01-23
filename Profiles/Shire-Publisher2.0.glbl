@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'shutHIVE80'</initValue>
+      <initValue>'flitLIMN68'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -53,5 +53,10 @@
       <description></description>
       <initValue>'Shire FF Admin'</initValue>
       <name>shireUser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['Mydayis', 'Vyvanse', 'Xiidra']</initValue>
+      <name>brands</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
